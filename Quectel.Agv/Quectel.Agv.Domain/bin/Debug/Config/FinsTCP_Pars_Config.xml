@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- dataType : BOOL = 0, BYTE = 1, INT = 2, SINGLE = 3, INTARRAY = 4, UINT16 = 5, UINT32 = 6, UINTARRAY = 7, BOOLARRAY = 8, USHORTARRAY = 9, TIMESPAN = 10-->
+<!-- protocolType : POSITION_LINE = 0, ROLLER_LINE = 1 -->
+<!-- isGroup,isWrite,isArray : ON = 1, OFF = 0 -->
+<ParsConfigs>
+  <Pars id="1" name="欧姆龙测试协议" protocolType="0" readDbAddress="200" readStartAddress="0" readOffset="10" writeDbAddress="200" writeStartAddress="10" writeOffset="10">
+    <par id="1" parName="rHeart" name="PLC心跳" dataType="0" isGroup="1" isWrite="0" isArray="0" arrayLength="0" startAddress="0" offset="1" bitOffset="0"/>
+    <par id="2" parName="test_read_1" name="测试读1" dataType="1" isGroup="1" isWrite="0" isArray="0" arrayLength="0" startAddress="1" offset="1" bitOffset="-1"/>
+    <par id="3" parName="test_read_2" name="测试读2" dataType="2" isGroup="1" isWrite="0" isArray="0" arrayLength="0" startAddress="2" offset="4" bitOffset="-1"/>
+    <par id="4" parName="test_read_3" name="测试读3" dataType="3" isGroup="1" isWrite="0" isArray="0" arrayLength="0" startAddress="6" offset="4" bitOffset="-1"/>
+    <par id="5" parName="wHeart" name="上位机心跳" dataType="0" isGroup="1" isWrite="1" isArray="0" arrayLength="0" startAddress="0" offset="1" bitOffset="0"/>
+    <par id="6" parName="test_write_1" name="测试写1" dataType="2" isGroup="0" isWrite="1" isArray="0" arrayLength="0" startAddress="1" offset="4" bitOffset="-1"/>
+    <par id="7" parName="test_write_2" name="测试写1" dataType="2" isGroup="0" isWrite="1" isArray="0" arrayLength="0" startAddress="2" offset="4" bitOffset="-1"/>
+    <par id="8" parName="test_write_3" name="测试写2" dataType="2" isGroup="0" isWrite="1" isArray="0" arrayLength="0" startAddress="6" offset="4" bitOffset="-1"/>
+    <par id="9" parName="single_read" name="单独测试读" dataType="4" isGroup="0" isWrite="1" isArray="1" arrayLength="2" startAddress="40" offset="8" bitOffset="-1"/>
+    <par id="10" parName="single_write" name="单独测试写" dataType="4" isGroup="0" isWrite="1" isArray="1" arrayLength="2" startAddress="60" offset="8" bitOffset="-1"/>
+  </Pars>
+</ParsConfigs>

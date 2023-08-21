@@ -1,0 +1,136 @@
+﻿<UserControl x:Class="Quectel.Agv.Views.LocationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        xmlns:local="clr-namespace:Quectel.Agv.Views" xmlns:vr="clr-namespace:Quectel.Agv.ValidationRules"
+             mc:Ignorable="d"
+        d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style x:Key="DataGridHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="TextBlock.Foreground" Value="White"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="DataGridCellStyle" TargetType="DataGridCell">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid >
+        <materialDesign:TransitioningContent OpeningEffectsOffset="{materialDesign:IndexedItemOffsetMultiplier 0:0:0.05}">
+            <materialDesign:TransitioningContent.OpeningEffects>
+                <materialDesign:TransitionEffect Kind="ExpandIn" />
+            </materialDesign:TransitioningContent.OpeningEffects>
+            <!--夹具-QR-->
+            <GroupBox Header="机器人坐标"
+                materialDesign:ColorZoneAssist.Mode="SecondaryMid"
+                Margin="5" Background="#203843">
+                <GroupBox.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="MapMarkerRadiusOutline"
+                                       Height="15"
+                                       Width="15"
+                                       VerticalAlignment="Center" />
+                            <TextBlock Margin="8,0,0,0"
+                         FontSize="12"
+                         VerticalAlignment="Center"
+                         Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                         Text="{Binding}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+
+                <DataGrid ItemsSource="{Binding LocationModel.Locations}"
+                  Background="#203843"
+                  CanUserAddRows="False"
+                  AutoGenerateColumns="False"
+                  SelectionUnit="Cell"
+                  SelectionMode="Extended"
+                  IsReadOnly="{Binding LocationModel.IsReadOnly}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Type}"
+                                Header="类型"
+                                Width="*"
+                                IsReadOnly="True"
+                                            
+                                HeaderStyle="{StaticResource DataGridHeaderStyle}"
+                                CellStyle="{StaticResource DataGridCellStyle}"            
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn Header="X"
+                                Width="*"
+                                HeaderStyle="{StaticResource DataGridHeaderStyle}"
+                                CellStyle="{StaticResource DataGridCellStyle}"  
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}">
+                            <DataGridTextColumn.Binding>
+                                <Binding Path="X">
+                                    <Binding.ValidationRules>
+                                        <vr:NumberValidationRule />
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </DataGridTextColumn.Binding>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Y"
+                                Width="*"
+                                HeaderStyle="{StaticResource DataGridHeaderStyle}"
+                                CellStyle="{StaticResource DataGridCellStyle}"              
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}">
+                            <DataGridTextColumn.Binding>
+                                <Binding Path="Y">
+                                    <Binding.ValidationRules>
+                                        <vr:NumberValidationRule />
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </DataGridTextColumn.Binding>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Z"
+                                Width="*"
+                                HeaderStyle="{StaticResource DataGridHeaderStyle}"
+                                CellStyle="{StaticResource DataGridCellStyle}"  
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}">
+                            <DataGridTextColumn.Binding>
+                                <Binding Path="Z">
+                                    <Binding.ValidationRules>
+                                        <vr:NumberValidationRule />
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </DataGridTextColumn.Binding>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="RZ"
+                                Width="*"
+                                HeaderStyle="{StaticResource DataGridHeaderStyle}"
+                                CellStyle="{StaticResource DataGridCellStyle}"  
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}">
+                            <DataGridTextColumn.Binding>
+                                <Binding Path="RZ">
+                                    <Binding.ValidationRules>
+                                        <vr:NumberValidationRule />
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </DataGridTextColumn.Binding>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Remarks}"
+                                Header="备注"
+                                 HeaderStyle="{StaticResource DataGridHeaderStyle}"
+                                CellStyle="{StaticResource DataGridCellStyle}"  
+                                Width="2*"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>

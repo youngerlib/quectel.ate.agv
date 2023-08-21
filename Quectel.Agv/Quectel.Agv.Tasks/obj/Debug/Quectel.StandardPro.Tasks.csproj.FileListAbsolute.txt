@@ -1,0 +1,6 @@
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Tasks\bin\Debug\Quectel.StandardPro.Tasks.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Tasks\bin\Debug\Quectel.StandardPro.Tasks.pdb
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Tasks\obj\Debug\Quectel.StandardPro.Tasks.csproj.AssemblyReference.cache
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Tasks\obj\Debug\Quectel.StandardPro.Tasks.csproj.CoreCompileInputs.cache
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Tasks\obj\Debug\Quectel.StandardPro.Tasks.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Tasks\obj\Debug\Quectel.StandardPro.Tasks.pdb

@@ -1,0 +1,97 @@
+﻿<UserControl x:Class="Quectel.Agv.Views.MechanismView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        xmlns:local="clr-namespace:Quectel.Agv.Views"
+        mc:Ignorable="d"
+        d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+            <Style x:Key="DataGridHeaderStyle" TargetType="DataGridColumnHeader">
+                <Setter Property="TextBlock.Foreground" Value="White"/>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="DataGridCellStyle" TargetType="DataGridCell">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+    </UserControl.Resources>
+    <Grid>
+        <materialDesign:TransitioningContent OpeningEffectsOffset="{materialDesign:IndexedItemOffsetMultiplier 0:0:0.05}">
+            <materialDesign:TransitioningContent.OpeningEffects>
+                <materialDesign:TransitionEffect Kind="ExpandIn" />
+            </materialDesign:TransitioningContent.OpeningEffects>
+            <GroupBox Header="机构参数"
+                materialDesign:ColorZoneAssist.Mode="SecondaryMid"
+                Margin="5" Background="#203843">
+                <GroupBox.HeaderTemplate>
+
+                    <DataTemplate>
+                        <DockPanel>
+                            <materialDesign:PackIcon Kind="StateMachine"
+                                       Height="15"
+                                       Width="15"
+                                       VerticalAlignment="Center" />
+                            <TextBlock Margin="5"
+                         FontSize="12"
+                         VerticalAlignment="Center"
+                         Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                         Text="{Binding}" />
+                           
+                            <Button Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type GroupBox}}, Path=DataContext.GetMechanismConfigCommand}"
+                      Style="{StaticResource MaterialDesignIconButton}"
+                      ToolTip="获取机构配置"
+                      HorizontalAlignment="Right"
+                      Height="25"
+                      Width="25"
+                      DockPanel.Dock="Right">
+                                <materialDesign:PackIcon Height="20"
+                                         Width="20"
+                                         Kind="CogSyncOutline" />
+                            </Button>
+                        </DockPanel>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+                <DataGrid ItemsSource="{Binding MechanismModel.Mechanisms}"
+                  Background="#203843"
+                  CanUserAddRows="False"
+                  AutoGenerateColumns="False"
+                  SelectionUnit="Cell"
+                  SelectionMode="Extended"
+                  IsReadOnly="{Binding MechanismModel.IsReadOnly}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Type}"
+                                Header="地址"
+                                Width="*"
+                                IsReadOnly="True"
+                                HeaderStyle="{StaticResource DataGridHeaderStyle}"
+                                CellStyle="{StaticResource DataGridCellStyle}"   
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn Binding="{Binding X}"
+                                Header="数值"
+                                Width="*"
+                                HeaderStyle="{StaticResource DataGridHeaderStyle}"
+                                CellStyle="{StaticResource DataGridCellStyle}"              
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                        <DataGridTextColumn Binding="{Binding Remarks}"
+                                Header="备注"
+                                Width="2*"
+                                HeaderStyle="{StaticResource DataGridHeaderStyle}"
+                                CellStyle="{StaticResource DataGridCellStyle}"  
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>

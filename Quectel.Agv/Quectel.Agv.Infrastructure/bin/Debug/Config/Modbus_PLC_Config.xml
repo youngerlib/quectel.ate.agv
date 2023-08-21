@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- type : modbus = 200 固定 -->
+<!-- protocolType : MODBUS_TEST = 100 固定 -->
+<!-- isEnabled : ON = 1, OFF = 0 -->
+<!-- isStringReverse : ON = 1, OFF = 0  固定 0-->
+<!-- dataFormat : ABCD = 0, BADC = 1, CDAB = 2, DCBA = 3 目前固定2-->
+<PLCConfigs>
+  <PLC id="1" name="测试modbus" type="200" ip="127.0.0.1" port="502" localNumber="1" parID ="1" protocolType="100" isEnabled="1" isStartWithZero ="1" isStringReverse="0" dataFormat="2" interval="250"></PLC>
+</PLCConfigs>

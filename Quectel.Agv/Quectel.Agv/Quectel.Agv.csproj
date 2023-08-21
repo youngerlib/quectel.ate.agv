@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB1C729F-600C-4A2F-B5C3-368A672D3ECC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quectel.StandardPro</RootNamespace>
+    <AssemblyName>Quectel.StandardPro</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="halcondotnet">
+      <HintPath>dll\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Quectel.ATE.Vision.Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Quectel.ATE.Vision.Control.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Converter\InverseBooleanConverter.cs" />
+    <Compile Include="Event\MessageEvent.cs" />
+    <Compile Include="Models\AdvancedSettingsModel.cs" />
+    <Compile Include="Models\AgvHomeModel.cs" />
+    <Compile Include="Models\AgvSettingsModel.cs" />
+    <Compile Include="Models\DataQueryModel.cs" />
+    <Compile Include="Models\LocationModel.cs" />
+    <Compile Include="Models\MechanismModel.cs" />
+    <Compile Include="ValidationRules\NumberValidationRule.cs" />
+    <Compile Include="ViewModels\AdvancedSettingsViewModel.cs" />
+    <Compile Include="ViewModels\AgvHomeViewModel.cs" />
+    <Compile Include="ViewModels\AgvSettingsViewModel.cs" />
+    <Compile Include="ViewModels\BarcodeRecognitionViewViewModel.cs" />
+    <Compile Include="ViewModels\DataQueryViewModel.cs" />
+    <Compile Include="ViewModels\HomeViewViewModel.cs" />
+    <Compile Include="ViewModels\LocationViewModel.cs" />
+    <Compile Include="ViewModels\MechanismViewModel.cs" />
+    <Compile Include="ViewModels\MyLeftLayoutViewModel.cs" />
+    <Compile Include="ViewModels\ProgressViewViewModel.cs" />
+    <Compile Include="ViewModels\QCRRecognitionViewViewModel.cs" />
+    <Compile Include="ViewModels\QRcodeRecognitionViewViewModel.cs" />
+    <Compile Include="ViewModels\SystemSettingViewViewModel.cs" />
+    <Compile Include="ViewModels\VisionToolViewViewModel.cs" />
+    <Compile Include="Views\AdvancedSettings.xaml.cs">
+      <DependentUpon>AdvancedSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AgvHome.xaml.cs">
+      <DependentUpon>AgvHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AgvSettings.xaml.cs">
+      <DependentUpon>AgvSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BarcodeRecognitionView.xaml.cs">
+      <DependentUpon>BarcodeRecognitionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataQuery.xaml.cs">
+      <DependentUpon>DataQuery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DetectChartView.xaml.cs">
+      <DependentUpon>DetectChartView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LocationView.xaml.cs">
+      <DependentUpon>LocationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MechanismView.xaml.cs">
+      <DependentUpon>MechanismView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MyLeftLayoutView.xaml.cs">
+      <DependentUpon>MyLeftLayoutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgressView.xaml.cs">
+      <DependentUpon>ProgressView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QCRRecognitionView.xaml.cs">
+      <DependentUpon>QCRRecognitionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QRcodeRecognitionView.xaml.cs">
+      <DependentUpon>QRcodeRecognitionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SystemSettingView.xaml.cs">
+      <DependentUpon>SystemSettingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VisionView.xaml.cs">
+      <DependentUpon>VisionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VisionToolView.xaml.cs">
+      <DependentUpon>VisionToolView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\AdvancedSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AgvHome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AgvSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\BarcodeRecognitionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataQuery.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\DetectChartView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\LocationView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GlobalVal\GlobalVariable.cs" />
+    <Compile Include="Helper\EnumStateMachineStateEx.cs" />
+    <Compile Include="Helper\EnumStateMachineTriggerEx.cs" />
+    <Compile Include="Helper\RichTextBoxHelper.cs" />
+    <Compile Include="Helper\StateMachineEx.cs" />
+    <Compile Include="Helper\TreeViewLineConverter.cs" />
+    <Compile Include="Models\LayoutModel.cs" />
+    <Compile Include="Models\MenuBar.cs" />
+    <Compile Include="Models\QCRRecognitionModel.cs" />
+    <Compile Include="Models\QRcodeRecognitionModel.cs" />
+    <Compile Include="Models\RealTimeData.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\MechanismView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MyLeftLayoutView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProgressView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QCRRecognitionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QRcodeRecognitionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SystemSettingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VisionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VisionToolView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Fonts\iconfont.ttf" />
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ControlzEx">
+      <Version>4.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.4</Version>
+    </PackageReference>
+    <PackageReference Include="Extended.Wpf.Toolkit">
+      <Version>4.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="LiveCharts">
+      <Version>0.9.7</Version>
+    </PackageReference>
+    <PackageReference Include="LiveCharts.Wpf">
+      <Version>0.9.7</Version>
+    </PackageReference>
+    <PackageReference Include="MahApps.Metro">
+      <Version>2.4.10</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialDesignColors">
+      <Version>2.1.4</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialDesignThemes">
+      <Version>4.9.0</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialDesignThemes.MahApps">
+      <Version>0.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Office.Interop.Excel">
+      <Version>15.0.4795.1001</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="PresentationFramework">
+      <Version>4.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.DryIoc" Version="8.0.0.1909" />
+    <PackageReference Include="SqlSugar">
+      <Version>5.1.4.72</Version>
+    </PackageReference>
+    <PackageReference Include="Stateless">
+      <Version>5.13.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <Version>1.0.117</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\base-inspect.png" />
+    <Resource Include="Images\FolderOpenOutline.ico" />
+    <Resource Include="Images\OK.jpg" />
+    <Resource Include="Images\Quectel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Quectel.Agv.CommonView\Quectel.Agv.CommonView.csproj">
+      <Project>{8a61151d-1e90-4669-9cef-8cc018496d1e}</Project>
+      <Name>Quectel.Agv.CommonView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Quectel.Agv.Domain\Quectel.Agv.Domain.csproj">
+      <Project>{bc5b3fe0-5f06-4b48-b791-2cd2460cf490}</Project>
+      <Name>Quectel.Agv.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Quectel.Agv.Entity\Quectel.Agv.Entity.csproj">
+      <Project>{6fbd900f-c309-4e12-8af7-960bb8250247}</Project>
+      <Name>Quectel.Agv.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Quectel.Agv.Infrastructure\Quectel.Agv.Infrastructure.csproj">
+      <Project>{af54e19e-a644-4e05-a148-418fd5153e7d}</Project>
+      <Name>Quectel.Agv.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Quectel.Agv.Repository\Quectel.Agv.Repository.csproj">
+      <Project>{e4831633-b3f6-4f0a-b90f-296833e3b6ad}</Project>
+      <Name>Quectel.Agv.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Quectel.Agv.Service\Quectel.Agv.Service.csproj">
+      <Project>{f4e77877-1e73-405a-b3f6-9ad44e51de55}</Project>
+      <Name>Quectel.Agv.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Quectel.Agv.Tasks\Quectel.Agv.Tasks.csproj">
+      <Project>{68acf38e-79bd-4d29-8efa-2744e270e20d}</Project>
+      <Name>Quectel.Agv.Tasks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Quectel.Agv.Utils\Quectel.Agv.Utils.csproj">
+      <Project>{97bf46e9-2ada-4d13-80de-ea66f4c1bcb3}</Project>
+      <Name>Quectel.Agv.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\img\base-inspect.png" />
+    <Resource Include="Resources\img\empty-image.png" />
+    <Resource Include="Resources\img\wms.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\img\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

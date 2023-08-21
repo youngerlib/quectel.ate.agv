@@ -1,0 +1,9 @@
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Entity\bin\Debug\Quectel.Agv.Entity.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Entity\bin\Debug\Quectel.Agv.Entity.pdb
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Entity\bin\Debug\SqlSugar.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Entity\bin\Debug\Newtonsoft.Json.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Entity\obj\Debug\Quectel.Agv.Entity.csproj.AssemblyReference.cache
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Entity\obj\Debug\Quectel.Agv.Entity.csproj.CoreCompileInputs.cache
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Entity\obj\Debug\Quectel.Agv.Entity.csproj.CopyComplete
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Entity\obj\Debug\Quectel.Agv.Entity.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Entity\obj\Debug\Quectel.Agv.Entity.pdb

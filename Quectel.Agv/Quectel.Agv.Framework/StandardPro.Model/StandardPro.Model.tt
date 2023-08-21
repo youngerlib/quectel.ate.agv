@@ -1,0 +1,57 @@
+﻿<#@ template debug="true" hostSpecific="true" language="C#" #>
+<#@ output extension=".cs" encoding="utf-8" #>
+<#@ Assembly Name="System.Core" #>
+<#@ Assembly name="System.Data.dll" #>
+<#@ Assembly name="System.Data.DataSetExtensions.dll" #>
+<#@ Assembly name="System.Xml.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ include file="$(ProjectDir)MultipleOutputHelper.ttinclude" #>
+<# var manager = new Manager(Host, GenerationEnvironment, true); #>
+<# var templateFileDirectory= Path.GetDirectoryName(Host.TemplateFile); #> //获取当前模板所在路径
+<# var projectPath = Host.ResolveAssemblyReference("$(ProjectDir)"); #> //获取当前项目路径 
+<# var solutionsPath = Host.ResolveAssemblyReference("$(SolutionDir)"); #> //获取解决方案路径 
+<# var projectName = "Quectel.Agv"; #> //项目名称 
+
+
+<#
+	var genNames = File.ReadLines(projectPath+"\\MvvmConfig.txt");
+	var OutputPath1 = solutionsPath + "\\" + projectName + "\\Models";
+	if (!Directory.Exists(OutputPath1))
+	{
+	    Directory.CreateDirectory(OutputPath1);
+	}
+#>
+
+<#
+foreach (string genName in genNames) {
+	if((genNames != null) && (genName.Trim().Length > 0)){
+		manager.StartBlock(genName+"Model.cs",OutputPath1);//文件名
+
+#>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace <#=projectName#>.Models
+{
+    public class <#=genName#>Model
+    {
+    }
+}
+
+
+<#
+		manager.EndBlock(); 
+		}	
+   }
+  manager.Process(true,false);
+#>

@@ -1,0 +1,8 @@
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Framework\bin\x64\Debug\Quectel.Agv.Framework.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Framework\bin\x64\Debug\Quectel.Agv.Framework.pdb
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Framework\bin\x64\Debug\PresentationFramework.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Framework\obj\x64\Debug\Quectel.Agv.Framework.csproj.AssemblyReference.cache
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Framework\obj\x64\Debug\Quectel.Agv.Framework.csproj.CoreCompileInputs.cache
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Framework\obj\x64\Debug\Quectel.Agv.Framework.csproj.CopyComplete
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Framework\obj\x64\Debug\Quectel.Agv.Framework.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Framework\obj\x64\Debug\Quectel.Agv.Framework.pdb

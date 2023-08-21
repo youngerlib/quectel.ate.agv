@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{874A06AE-6D4D-48FD-887F-DDA9BE979F0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quectel.StandardPro.Communication</RootNamespace>
+    <AssemblyName>Quectel.Agv.Communication</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicFramework\SoftBaseClass.cs" />
+    <Compile Include="BasicFramework\SoftBasic.cs" />
+    <Compile Include="BasicFramework\SoftBuffer.cs" />
+    <Compile Include="BasicFramework\SoftNumerical.cs" />
+    <Compile Include="BasicFramework\SoftZipped.cs" />
+    <Compile Include="Core\IMessage\AlienMessage.cs" />
+    <Compile Include="Core\IMessage\AllenBradleyMessage.cs" />
+    <Compile Include="Core\IMessage\FetchWriteMessage.cs" />
+    <Compile Include="Core\IMessage\FinsMessage.cs" />
+    <Compile Include="Core\IMessage\INetMessage.cs" />
+    <Compile Include="Core\IMessage\MelsecA1EBinaryMessage.cs" />
+    <Compile Include="Core\IMessage\MelsecQnA3EAsciiMessage.cs" />
+    <Compile Include="Core\IMessage\MelsecQnA3EBinaryMessage.cs" />
+    <Compile Include="Core\IMessage\ModbusTcpMessage.cs" />
+    <Compile Include="Core\IMessage\S7Message.cs" />
+    <Compile Include="Core\Net\QuectelProtocol.cs" />
+    <Compile Include="Core\Net\IReadWriteNet.cs" />
+    <Compile Include="Core\Net\NetSupport.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkAlienClient.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkAuthenticationServerBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkDataServerBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkDeviceBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkDoubleBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkFileServerBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkServerBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkUdpBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkUdpDeviceBase.cs" />
+    <Compile Include="Core\Net\NetworkBase\NetworkXBase.cs" />
+    <Compile Include="Core\QuectelThread\ThreadLock.cs" />
+    <Compile Include="Core\Net\NetworkUdpDeviceBase.cs" />
+    <Compile Include="Core\Net\StateOne\AlienSession.cs" />
+    <Compile Include="Core\Net\StateOne\AppSession.cs" />
+    <Compile Include="Core\Net\StateOne\AsyncStateSend.cs" />
+    <Compile Include="Core\Net\StateOne\FileStateObject.cs" />
+    <Compile Include="Core\Net\StateOne\StateObject.cs" />
+    <Compile Include="Core\Net\StateOne\StateOneBase.cs" />
+    <Compile Include="Core\Security\QuectelSecurity.cs" />
+    <Compile Include="Core\Transfer\ByteTransformBase.cs" />
+    <Compile Include="Core\Transfer\ByteTransformHelper.cs" />
+    <Compile Include="Core\Transfer\DataFormat.cs" />
+    <Compile Include="Core\Transfer\IByteTransform.cs" />
+    <Compile Include="Core\Transfer\RegularByteTransform.cs" />
+    <Compile Include="Core\Transfer\ReverseBytesTransform.cs" />
+    <Compile Include="Core\Transfer\ReverseWordTransform.cs" />
+    <Compile Include="Core\Types\QuectelTimeOut.cs" />
+    <Compile Include="Core\Types\IDataTransfer.cs" />
+    <Compile Include="Enthernet\FileNet\FileBaseInfo.cs" />
+    <Compile Include="Enthernet\FileNet\FileMarkId.cs" />
+    <Compile Include="Language\DefaultLanguage.cs" />
+    <Compile Include="Language\English.cs" />
+    <Compile Include="LogNet\Core\ILogNet.cs" />
+    <Compile Include="LogNet\Core\LogNetBase.cs" />
+    <Compile Include="LogNet\Core\Types.cs" />
+    <Compile Include="LogNet\LogNetManagment.cs" />
+    <Compile Include="LogNet\Logs\LogNetDateTime.cs" />
+    <Compile Include="LogNet\Logs\LogNetFileSize.cs" />
+    <Compile Include="LogNet\Logs\LogNetSingle.cs" />
+    <Compile Include="ModBus\ModbusAscii\ModbusAscii.cs" />
+    <Compile Include="ModBus\ModbusInfo.cs" />
+    <Compile Include="ModBus\ModBusMonitorAddress.cs" />
+    <Compile Include="ModBus\QuectelModbusRtu\ModbusRtu.cs" />
+    <Compile Include="ModBus\ModBusState.cs" />
+    <Compile Include="ModBus\ModbusTcp\ModbusTcpNet.cs" />
+    <Compile Include="ModBus\ModbusTcp\ModbusTcpServer.cs" />
+    <Compile Include="ModBus\MonitorAddress.cs" />
+    <Compile Include="Profinet\AllenBradley\AllenBradleyHelper.cs" />
+    <Compile Include="Profinet\AllenBradley\AllenBradleyNet.cs" />
+    <Compile Include="Profinet\Melsec\MelsecA1EDataType.cs" />
+    <Compile Include="Profinet\Melsec\MelsecA1ENet.cs" />
+    <Compile Include="Profinet\Melsec\MelsecA3CNet1.cs" />
+    <Compile Include="Profinet\Melsec\MelsecFxLinks.cs" />
+    <Compile Include="Profinet\Melsec\MelsecFxSerial.cs" />
+    <Compile Include="Profinet\Melsec\MelsecHelper.cs" />
+    <Compile Include="Profinet\Melsec\MelsecMcAsciiNet.cs" />
+    <Compile Include="Profinet\Melsec\MelsecMcDataType.cs" />
+    <Compile Include="Profinet\Melsec\MelsecMcNet.cs" />
+    <Compile Include="Profinet\Melsec\MelsecMcServer.cs" />
+    <Compile Include="Profinet\Omron\OmronCipNet.cs" />
+    <Compile Include="Profinet\Omron\OmronFinsDataType.cs" />
+    <Compile Include="Profinet\Omron\OmronFinsNet.cs" />
+    <Compile Include="Profinet\Omron\OmronFinsNetHelper.cs" />
+    <Compile Include="Profinet\Omron\OmronFinsUdp.cs" />
+    <Compile Include="Profinet\Omron\OmronHostLink.cs" />
+    <Compile Include="Profinet\Siemens\SiemensFetchWriteNet.cs" />
+    <Compile Include="Profinet\Siemens\SiemensPLCS.cs" />
+    <Compile Include="Profinet\Siemens\SiemensPPI.cs" />
+    <Compile Include="Profinet\Siemens\SiemensS7Net.cs" />
+    <Compile Include="Profinet\Siemens\SiemensS7Server.cs" />
+    <Compile Include="Serial\FP1_C72.cs" />
+    <Compile Include="Serial\SerialBase.cs" />
+    <Compile Include="Serial\SerialDeviceBase.cs" />
+    <Compile Include="Serial\SoftCRC16.cs" />
+    <Compile Include="Serial\SoftLRC.cs" />
+    <Compile Include="StringResources.cs" />
+    <Compile Include="Core\Address\DeviceAddressBase.cs" />
+    <Compile Include="Core\Address\DeviceAddressDataBase.cs" />
+    <Compile Include="Core\Address\McAddressData.cs" />
+    <Compile Include="Core\Address\ModbusAddress.cs" />
+    <Compile Include="Core\Address\S7AddressData.cs" />
+    <Compile Include="Core\Types\OperateResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="CommunicationClassDiagram.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

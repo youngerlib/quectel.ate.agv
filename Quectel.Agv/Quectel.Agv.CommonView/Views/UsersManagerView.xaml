@@ -1,0 +1,167 @@
+﻿<UserControl
+    x:Class="Quectel.Agv.CommonView.Views.UsersManagerView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ctrls="clr-namespace:Quectel.Agv.CommonView.Controls"
+    xmlns:domain="clr-namespace:Quectel.Agv.CommonView.Class"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:materialDesignColors="clr-namespace:MaterialDesignColors;assembly=MaterialDesignColors"
+    xmlns:prism="http://prismlibrary.com/"
+    prism:ViewModelLocator.AutoWireViewModel="True">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.DataGrid.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary>
+                    <Style x:Key="LinkButton" TargetType="Button">
+                        <Setter Property="Background" Value="White" />
+                        <Setter Property="Cursor" Value="Hand" />
+                        <Setter Property="Margin" Value="3" />
+                        <Setter Property="MinWidth" Value="80" />
+                        <Setter Property="MinHeight" Value="25" />
+                        <Setter Property="BorderThickness" Value="0,0,0,0" />
+                    </Style>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadedCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel
+            Grid.Row="0"
+            VerticalAlignment="Center"
+            Orientation="Horizontal">
+            <TextBox
+                Width="120"
+                Height="30"
+                Margin="20,3,3,3"
+                Padding="0"
+                HorizontalContentAlignment="Stretch"
+                materialDesign:HintAssist.Hint="用户名"
+                materialDesign:TextFieldAssist.HasClearButton="True"
+                FontSize="10"
+                SpellCheck.IsEnabled="True"
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                Text="{Binding UserName}" />
+            <Button
+                Width="120"
+                Height="30"
+                Margin="120,3,3,3"
+                Command="{Binding QueryCommand}"
+                Content="查询"
+                Style="{DynamicResource MaterialDesignFlatSecondaryLightBgButton}" />
+            <Button
+                Width="120"
+                Height="30"
+                Margin="3"
+                Command="{Binding AddCommand}"
+                Content="新增"
+                Style="{DynamicResource MaterialDesignFlatSecondaryLightBgButton}" />
+        </StackPanel>
+        <DataGrid
+            x:Name="dgUsers"
+            Grid.Row="1"
+            Grid.Column="0"
+            Margin="2"
+            AutoGenerateColumns="False"
+            CanUserAddRows="False"
+            CanUserDeleteRows="False"
+            HeadersVisibility="All"
+            ItemsSource="{Binding Users}"
+            RowHeaderWidth="0">
+            <DataGrid.Resources>
+                <domain:BindingProxy x:Key="DataContextProxy" Data="{Binding}" />
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn
+                    Binding="{Binding IsSelected, UpdateSourceTrigger=PropertyChanged}"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnEditingStyle}"
+                    ElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnStyle}">
+                    <DataGridCheckBoxColumn.Header>
+                        <Border Background="Transparent">
+                            <CheckBox
+                                HorizontalContentAlignment="Left"
+                                Content="ALL"
+                                IsChecked="{Binding Data.IsAllItems1Selected, Source={StaticResource DataContextProxy}}" />
+                        </Border>
+                    </DataGridCheckBoxColumn.Header>
+                    <DataGridCheckBoxColumn.HeaderStyle>
+                        <Style BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}" TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridCheckBoxColumn.HeaderStyle>
+                </DataGridCheckBoxColumn>
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding UserName}"
+                    Header="用户名" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding NickName}"
+                    Header="昵称" />
+                <DataGridTemplateColumn Width="*" Header="操作">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button
+                                    Command="{Binding RelativeSource={RelativeSource AncestorType=DataGrid, Mode=FindAncestor}, Path=DataContext.EditUserRoleCommand}"
+                                    CommandParameter="{Binding Id}"
+                                    Content="授权"
+                                    Style="{StaticResource LinkButton}">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <TextBlock HorizontalAlignment="Center" TextDecorations="Underline">
+                                                <ContentPresenter />
+                                            </TextBlock>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+                                <Button
+                                    Command="{Binding RelativeSource={RelativeSource AncestorType=DataGrid, Mode=FindAncestor}, Path=DataContext.EditCommand}"
+                                    CommandParameter="{Binding Id}"
+                                    Content="编辑"
+                                    Style="{StaticResource LinkButton}">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <TextBlock HorizontalAlignment="Center" TextDecorations="Underline">
+                                                <ContentPresenter />
+                                            </TextBlock>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+                                <Button
+                                    Command="{Binding RelativeSource={RelativeSource AncestorType=DataGrid, Mode=FindAncestor}, Path=DataContext.DeleteCommand}"
+                                    CommandParameter="{Binding Id}"
+                                    Content="删除"
+                                    Style="{StaticResource LinkButton}">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <TextBlock HorizontalAlignment="Center" TextDecorations="Underline">
+                                                <ContentPresenter />
+                                            </TextBlock>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <ctrls:PageControl Grid.Row="2" DataContext="{Binding}" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- type : Melsec_PLC_NO_TYPE = 100 固定 -->
+<!-- protocolType : Qna3E_TEST = 10 -->
+<!-- isEnabled : ON = 1, OFF = 0 -->
+<PLCConfigs>
+  <PLC id="1" name="三菱测试PLC" type="100" ip="127.0.0.1" port="6000" parID ="1" protocolType="10" isEnabled="1" interval="450"></PLC>
+</PLCConfigs>

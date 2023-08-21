@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- type : S7_200 = 0, S7_300 = 10, S7_400 = 20, S7_1200 = 30, S7_1500 = 40 -->
+<!-- protocolType : POSITION_LINE = 0, ROLLER_LINE = 1 -->
+<!-- isEnabled : ON = 1, OFF = 0 -->
+<PLCConfigs>
+  <PLC id="1" name="西门子测试PLC" type="30" ip="127.0.0.1" port="102" rack="0" slot="1" parID ="1" protocolType="10" isEnabled="1" interval="450"></PLC>
+</PLCConfigs>

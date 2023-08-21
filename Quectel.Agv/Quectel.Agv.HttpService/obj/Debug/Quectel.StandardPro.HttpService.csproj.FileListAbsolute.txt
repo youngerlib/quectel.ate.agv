@@ -1,0 +1,10 @@
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.HttpServiceHost\bin\Debug\Config\DataBaseConnectionConfigs.xml
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.HttpServiceHost\bin\Debug\Quectel.StandardPro.HttpService.dll.config
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.HttpServiceHost\bin\Debug\Quectel.StandardPro.HttpService.xml
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.HttpServiceHost\bin\Debug\Quectel.StandardPro.HttpService.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.HttpServiceHost\bin\Debug\Quectel.StandardPro.HttpService.pdb
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.HttpService\obj\Debug\Quectel.StandardPro.HttpService.csproj.AssemblyReference.cache
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.HttpService\obj\Debug\Quectel.StandardPro.HttpService.csproj.CoreCompileInputs.cache
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.HttpService\obj\Debug\Quectel.StandardPro.HttpService.csproj.CopyComplete
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.HttpService\obj\Debug\Quectel.StandardPro.HttpService.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.HttpService\obj\Debug\Quectel.StandardPro.HttpService.pdb

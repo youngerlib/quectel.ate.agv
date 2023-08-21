@@ -1,0 +1,9 @@
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Entity\bin\Debug\Quectel.StandardPro.Entity.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Entity\bin\Debug\Quectel.StandardPro.Entity.pdb
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Entity\bin\Debug\SqlSugar.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Entity\bin\Debug\Newtonsoft.Json.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Entity\obj\Debug\Quectel.StandardPro.Entity.csproj.AssemblyReference.cache
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Entity\obj\Debug\Quectel.StandardPro.Entity.csproj.CoreCompileInputs.cache
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Entity\obj\Debug\Quectel.StandardPro.Entity.csproj.CopyComplete
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Entity\obj\Debug\Quectel.StandardPro.Entity.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Entity\obj\Debug\Quectel.StandardPro.Entity.pdb

@@ -1,0 +1,227 @@
+﻿<UserControl
+    x:Class="Quectel.Agv.Views.AgvHome"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:localhelper="clr-namespace:Quectel.Agv.Helper"
+    xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:View="clr-namespace:Quectel.Agv.Views"
+    xmlns:prism="http://prismlibrary.com/" xmlns:viewmodels="clr-namespace:Quectel.Agv.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:AgvHomeViewModel}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style x:Key="DataGridHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="TextBlock.Foreground" Value="White" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Border
+            Height="50"
+            Background="#203843"
+            BorderBrush="White"
+            BorderThickness="1"
+            CornerRadius="4"
+           >
+                <DockPanel LastChildFill="False">
+                    <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                        <Button IsEnabled="{Binding Home.IsEnableInitSystemBtn}"
+                Command="{Binding PubSubEventCommand }"
+                Content="初始化"
+                DockPanel.Dock="Right"
+                Margin="0,0,10,0"
+                Cursor="Hand" />
+                        <Button IsEnabled="{Binding Home.IsEnableStartBtn}"
+                Command="{Binding PubSubEventCommand1}"
+                Margin="0,0,10,0"
+                Background="Green"
+                BorderBrush="Green"
+                Content="启动" />
+                        <Button IsEnabled="{Binding Home.IsEnableStopBtn}"
+                Command="{Binding StopCommand}"
+                Content="停止"
+                Margin="0,0,10,0"
+                BorderBrush="#F56C6C"
+                Background="#F56C6C" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"
+                  DockPanel.Dock="Left">
+                        <TextBlock Text="{Binding AgvHomeModel.CurrentModelType,StringFormat=当前机型:{0}}"
+                                   Foreground="White"
+                   VerticalAlignment="Center"
+                   />
+                    </StackPanel>
+                </DockPanel>
+               
+                
+            </Border>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border
+            Background="#203843"
+            BorderBrush="White"
+            BorderThickness="1,0,1,0"
+            CornerRadius="4" 
+            Grid.Row="1"
+            Grid.Column="0">
+                <View:VisionView/>
+            </Border>
+            <Border
+            Background="#203843"
+            BorderBrush="White"
+            BorderThickness="0,0,1,0"
+            CornerRadius="4" 
+            Grid.Row="1"
+            Grid.Column="1">
+                <View:VisionView/>
+            </Border>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Border
+            Background="#203843"
+            BorderBrush="White"
+            BorderThickness="1,0,1,1"
+            CornerRadius="4"
+            Grid.Row="2"
+            >
+                <GroupBox Header="运行日志"
+                    Style="{DynamicResource MaterialDesignGroupBox}"
+                    materialDesign:ColorZoneAssist.Mode="SecondaryMid"
+                    Padding="1,1" >
+                    <GroupBox.HeaderTemplate >
+                        <DataTemplate >
+                            <DockPanel Background="#203843">
+                                <materialDesign:PackIcon Kind="CardTextOutline"
+                                           Height="15"
+                                           Width="15"
+                                           VerticalAlignment="Center"
+                                                         Foreground="White"/>
+                                <TextBlock Margin="5"
+                             FontSize="12"
+                             VerticalAlignment="Center"
+                             Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                             Text="{Binding}" 
+                                           Foreground="White"/>
+                                <Button x:Name="ClearUILogBtn"
+                          Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type GroupBox}}, Path=DataContext.ClearUILogCommand}"
+                          Style="{StaticResource MaterialDesignIconButton}"
+                          ToolTip="清空运行LOG"
+                          HorizontalAlignment="Right"
+                          Height="25"
+                          Width="25">
+                                    <materialDesign:PackIcon Height="20"
+                                             Width="20"
+                                             Kind="Autorenew" />
+                                </Button>
+                            </DockPanel>
+                        </DataTemplate>
+                    </GroupBox.HeaderTemplate>
+
+                    <RichTextBox x:Name="RunLog"
+                         IsReadOnly="True"
+                         VerticalScrollBarVisibility="Auto">
+                        <RichTextBox.Document>
+                            <FlowDocument LineHeight="5"
+                              FontSize="12" />
+                        </RichTextBox.Document>
+                    </RichTextBox>
+                </GroupBox>
+            </Border>
+        </Grid>
+        <Grid Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Background="#203843">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" BorderBrush="White" BorderThickness="0,0,1,1" CornerRadius="4">
+                <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+             
+                    <Border Grid.ColumnSpan="2">
+                        <TextBlock Text="检测数据" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Stretch"/>
+                    </Border>
+                    <TextBlock
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Margin="8,10,0,0"
+                            FontSize="15"
+                            Foreground="White"
+                            Text="NG数量：" />
+                    <TextBlock
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="5,10,0,0"
+                            FontSize="15"
+                            Foreground="Pink"
+                            Text="{Binding AgvHomeModel.NgCount}" />
+                    <TextBlock
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            Margin="8,10,0,0"
+                            FontSize="15"
+                            Foreground="White"
+                            Text="合格率：" />
+                    <TextBlock
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Margin="5,10,0,0"
+                            FontSize="15"
+                            Foreground="ForestGreen"
+                            Text="{Binding AgvHomeModel.Fpy}" />
+                    <TextBlock
+                            Grid.Row="3"
+                            Grid.Column="0"
+                            Margin="8,10,0,0"
+                            FontSize="15"
+                            Foreground="White"
+                            Text="检测总数：" />
+                    <TextBlock
+                            Grid.Row="3"
+                            Grid.Column="1"
+                            Margin="5,10,0,0"
+                            FontSize="15"
+                            Foreground="White"
+                            Text="{Binding AgvHomeModel.TotalCount}" />
+                    
+            </Grid>
+                </Border>
+            <Border Grid.Row="1" BorderBrush="White" BorderThickness="0,0,1,1" CornerRadius="4">
+                <View:DetectChartView ChartSeries="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=UserControl},Path=DataContext.FixedPieSeriesCollection}">
+                </View:DetectChartView>
+            </Border>
+        </Grid>
+
+    </Grid>
+</UserControl>

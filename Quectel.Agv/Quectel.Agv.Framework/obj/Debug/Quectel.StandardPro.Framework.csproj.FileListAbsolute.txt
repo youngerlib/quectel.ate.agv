@@ -1,0 +1,9 @@
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Framework\bin\Debug\Quectel.StandardPro.Framework.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Framework\bin\Debug\Quectel.StandardPro.Framework.pdb
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Framework\bin\Debug\PresentationFramework.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Framework\obj\Debug\Quectel.StandardPro.Framework.csproj.AssemblyReference.cache
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Framework\obj\Debug\Quectel.StandardPro.Framework.csproj.CoreCompileInputs.cache
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Framework\obj\Debug\Quectel.StandardPro.Framework.csproj.CopyComplete
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Framework\obj\Debug\Quectel.StandardPro.Framework.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Framework\obj\Debug\Quectel.StandardPro.Framework.pdb
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Framework\obj\Debug\Quectel.StandardPro.Framework_MarkupCompile.cache

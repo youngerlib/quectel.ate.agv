@@ -1,0 +1,383 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro\\Quectel.StandardPro.csproj": {}
+  },
+  "projects": {
+    "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.CommonView\\Quectel.StandardPro.CommonView.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.CommonView\\Quectel.StandardPro.CommonView.csproj",
+        "projectName": "Quectel.StandardPro.CommonView",
+        "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.CommonView\\Quectel.StandardPro.CommonView.csproj",
+        "packagesPath": "C:\\Users\\quectel\\.nuget\\packages\\",
+        "outputPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.CommonView\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\quectel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Repository\\Quectel.StandardPro.Repository.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Repository\\Quectel.StandardPro.Repository.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Service\\Quectel.StandardPro.Service.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Service\\Quectel.StandardPro.Service.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Communication\\Quectel.StandardPro.Communication.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Communication\\Quectel.StandardPro.Communication.csproj",
+        "projectName": "Quectel.StandardPro.Communication",
+        "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Communication\\Quectel.StandardPro.Communication.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Domain\\Quectel.StandardPro.Domain.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Domain\\Quectel.StandardPro.Domain.csproj",
+        "projectName": "Quectel.StandardPro.Domain",
+        "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Domain\\Quectel.StandardPro.Domain.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Communication\\Quectel.StandardPro.Communication.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Communication\\Quectel.StandardPro.Communication.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Infrastructure\\Quectel.StandardPro.Infrastructure.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Infrastructure\\Quectel.StandardPro.Infrastructure.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Repository\\Quectel.StandardPro.Repository.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Repository\\Quectel.StandardPro.Repository.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Service\\Quectel.StandardPro.Service.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Service\\Quectel.StandardPro.Service.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj",
+        "projectName": "Quectel.StandardPro.Entity",
+        "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Infrastructure\\Quectel.StandardPro.Infrastructure.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Infrastructure\\Quectel.StandardPro.Infrastructure.csproj",
+        "projectName": "Quectel.StandardPro.Infrastructure",
+        "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Infrastructure\\Quectel.StandardPro.Infrastructure.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Communication\\Quectel.StandardPro.Communication.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Communication\\Quectel.StandardPro.Communication.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Repository\\Quectel.StandardPro.Repository.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Repository\\Quectel.StandardPro.Repository.csproj",
+        "projectName": "Quectel.StandardPro.Repository",
+        "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Repository\\Quectel.StandardPro.Repository.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Service\\Quectel.StandardPro.Service.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Service\\Quectel.StandardPro.Service.csproj",
+        "projectName": "Quectel.StandardPro.Service",
+        "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Service\\Quectel.StandardPro.Service.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Repository\\Quectel.StandardPro.Repository.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Repository\\Quectel.StandardPro.Repository.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Tasks\\Quectel.StandardPro.Tasks.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Tasks\\Quectel.StandardPro.Tasks.csproj",
+        "projectName": "Quectel.StandardPro.Tasks",
+        "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Tasks\\Quectel.StandardPro.Tasks.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj",
+        "projectName": "Quectel.StandardPro.Utils",
+        "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro\\Quectel.StandardPro.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro\\Quectel.StandardPro.csproj",
+        "projectName": "Quectel.StandardPro",
+        "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro\\Quectel.StandardPro.csproj",
+        "packagesPath": "C:\\Users\\quectel\\.nuget\\packages\\",
+        "outputPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\quectel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.CommonView\\Quectel.StandardPro.CommonView.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.CommonView\\Quectel.StandardPro.CommonView.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Domain\\Quectel.StandardPro.Domain.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Domain\\Quectel.StandardPro.Domain.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Entity\\Quectel.StandardPro.Entity.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Infrastructure\\Quectel.StandardPro.Infrastructure.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Infrastructure\\Quectel.StandardPro.Infrastructure.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Repository\\Quectel.StandardPro.Repository.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Repository\\Quectel.StandardPro.Repository.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Service\\Quectel.StandardPro.Service.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Service\\Quectel.StandardPro.Service.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Tasks\\Quectel.StandardPro.Tasks.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Tasks\\Quectel.StandardPro.Tasks.csproj"
+              },
+              "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj": {
+                "projectPath": "D:\\SVN\\上位机软件标准框架\\源码\\Quectel.StandardPro\\Quectel.StandardPro.Utils\\Quectel.StandardPro.Utils.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "ControlzEx": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "LiveCharts": {
+              "target": "Package",
+              "version": "[0.9.7, )"
+            },
+            "LiveCharts.Wpf": {
+              "target": "Package",
+              "version": "[0.9.7, )"
+            },
+            "MahApps.Metro": {
+              "target": "Package",
+              "version": "[2.4.10, )"
+            },
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "MaterialDesignThemes.MahApps": {
+              "target": "Package",
+              "version": "[0.3.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "PresentationFramework": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
+            "Prism.DryIoc": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            },
+            "SqlSugar": {
+              "target": "Package",
+              "version": "[5.1.4.72, )"
+            },
+            "Stateless": {
+              "target": "Package",
+              "version": "[5.13.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.117, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

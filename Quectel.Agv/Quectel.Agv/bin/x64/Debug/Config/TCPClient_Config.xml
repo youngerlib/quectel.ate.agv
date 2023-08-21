@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- isEnabled : ON = 1, OFF = 0 -->
+<TCPClientConfigs>
+  <TCPClient id="1" name="TCP客户端测试1" serverIP="127.0.0.1" serverPort="9000" isEnabled="1" />
+  <TCPClient id="2" name="TCP客户端测试2" serverIP="127.0.0.1" serverPort="9001" isEnabled="1" />
+</TCPClientConfigs>

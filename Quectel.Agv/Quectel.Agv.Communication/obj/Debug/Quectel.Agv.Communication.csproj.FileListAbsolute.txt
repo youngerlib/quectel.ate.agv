@@ -1,0 +1,10 @@
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Communication\bin\Debug\Quectel.Agv.Communication.dll.config
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Communication\bin\Debug\Quectel.Agv.Communication.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Communication\bin\Debug\Quectel.Agv.Communication.pdb
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Communication\bin\Debug\Newtonsoft.Json.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Communication\bin\Debug\Newtonsoft.Json.xml
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Communication\obj\Debug\Quectel.Agv.Communication.csproj.AssemblyReference.cache
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Communication\obj\Debug\Quectel.Agv.Communication.csproj.CoreCompileInputs.cache
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Communication\obj\Debug\Quectel.Agv.Communication.csproj.CopyComplete
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Communication\obj\Debug\Quectel.Agv.Communication.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Communication\obj\Debug\Quectel.Agv.Communication.pdb

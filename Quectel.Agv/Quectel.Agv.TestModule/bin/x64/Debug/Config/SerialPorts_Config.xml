@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- isEnabled : ON = 1, OFF = 0 -->
+<SerialPortConfigs>
+  <SerialPort id="1" name="串口测试1" portName="COM5" baudRate="9600" isEnabled="1" />
+  <SerialPort id="2" name="串口测试2" portName="COM7" baudRate="9600" isEnabled="1" />
+</SerialPortConfigs>

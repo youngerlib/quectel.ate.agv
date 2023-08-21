@@ -1,0 +1,14 @@
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\UnitTestProject\bin\Debug\Config\Log4net.config
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\UnitTestProject\bin\Debug\Config\DataBaseConnectionConfigs.xml
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\UnitTestProject\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\UnitTestProject\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\UnitTestProject\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\UnitTestProject\bin\Debug\UnitTestProject.dll.config
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\UnitTestProject\bin\Debug\UnitTestProject.dll
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\UnitTestProject\Debug\UnitTestProject.csproj.AssemblyReference.cache
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\UnitTestProject\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\UnitTestProject\Debug\UnitTestProject.csproj.CopyComplete
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\UnitTestProject\Debug\UnitTestProject.dll

@@ -1,0 +1,4 @@
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\Quectel.StandardPro.Common\bin\Debug\Quectel.StandardPro.Common.dll
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\Quectel.StandardPro.Common\Debug\Quectel.StandardPro.Common.csproj.CoreCompileInputs.cache
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\Quectel.StandardPro.Common\Debug\Quectel.StandardPro.Common.csproj.CopyComplete
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\Quectel.StandardPro.Common\Debug\Quectel.StandardPro.Common.dll

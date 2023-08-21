@@ -1,0 +1,159 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.CommonView\\Quectel.Agv.CommonView.csproj": {}
+  },
+  "projects": {
+    "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.CommonView\\Quectel.Agv.CommonView.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.CommonView\\Quectel.Agv.CommonView.csproj",
+        "projectName": "Quectel.Agv.CommonView",
+        "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.CommonView\\Quectel.Agv.CommonView.csproj",
+        "packagesPath": "C:\\Users\\quectel\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.CommonView\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\quectel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Entity\\Quectel.Agv.Entity.csproj": {
+                "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Entity\\Quectel.Agv.Entity.csproj"
+              },
+              "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Repository\\Quectel.Agv.Repository.csproj": {
+                "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Repository\\Quectel.Agv.Repository.csproj"
+              },
+              "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Service\\Quectel.Agv.Service.csproj": {
+                "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Service\\Quectel.Agv.Service.csproj"
+              },
+              "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Utils\\Quectel.Agv.Utils.csproj": {
+                "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Utils\\Quectel.Agv.Utils.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Entity\\Quectel.Agv.Entity.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Entity\\Quectel.Agv.Entity.csproj",
+        "projectName": "Quectel.Agv.Entity",
+        "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Entity\\Quectel.Agv.Entity.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Repository\\Quectel.Agv.Repository.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Repository\\Quectel.Agv.Repository.csproj",
+        "projectName": "Quectel.Agv.Repository",
+        "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Repository\\Quectel.Agv.Repository.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Entity\\Quectel.Agv.Entity.csproj": {
+                "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Entity\\Quectel.Agv.Entity.csproj"
+              },
+              "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Utils\\Quectel.Agv.Utils.csproj": {
+                "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Utils\\Quectel.Agv.Utils.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Service\\Quectel.Agv.Service.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Service\\Quectel.Agv.Service.csproj",
+        "projectName": "Quectel.Agv.Service",
+        "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Service\\Quectel.Agv.Service.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Entity\\Quectel.Agv.Entity.csproj": {
+                "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Entity\\Quectel.Agv.Entity.csproj"
+              },
+              "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Repository\\Quectel.Agv.Repository.csproj": {
+                "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Repository\\Quectel.Agv.Repository.csproj"
+              },
+              "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Utils\\Quectel.Agv.Utils.csproj": {
+                "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Utils\\Quectel.Agv.Utils.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Utils\\Quectel.Agv.Utils.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Utils\\Quectel.Agv.Utils.csproj",
+        "projectName": "Quectel.Agv.Utils",
+        "projectPath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.Utils\\Quectel.Agv.Utils.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    }
+  }
+}

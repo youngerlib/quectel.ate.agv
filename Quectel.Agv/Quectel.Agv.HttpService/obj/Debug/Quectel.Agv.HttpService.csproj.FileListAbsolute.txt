@@ -1,0 +1,11 @@
+D:\code\标准框架\Quectel.Agv\Quectel.StandardPro.HttpServiceHost\bin\Debug\Config\Log4net.config
+D:\code\标准框架\Quectel.Agv\Quectel.StandardPro.HttpServiceHost\bin\Debug\Config\DataBaseConnectionConfigs.xml
+D:\code\标准框架\Quectel.Agv\Quectel.StandardPro.HttpServiceHost\bin\Debug\Quectel.Agv.HttpService.dll.config
+D:\code\标准框架\Quectel.Agv\Quectel.StandardPro.HttpServiceHost\bin\Debug\Quectel.Agv.HttpService.xml
+D:\code\标准框架\Quectel.Agv\Quectel.StandardPro.HttpServiceHost\bin\Debug\Quectel.Agv.HttpService.dll
+D:\code\标准框架\Quectel.Agv\Quectel.StandardPro.HttpServiceHost\bin\Debug\Quectel.Agv.HttpService.pdb
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.HttpService\obj\Debug\Quectel.Agv.HttpService.csproj.AssemblyReference.cache
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.HttpService\obj\Debug\Quectel.Agv.HttpService.csproj.CoreCompileInputs.cache
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.HttpService\obj\Debug\Quectel.Agv.HttpService.csproj.CopyComplete
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.HttpService\obj\Debug\Quectel.Agv.HttpService.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.HttpService\obj\Debug\Quectel.Agv.HttpService.pdb

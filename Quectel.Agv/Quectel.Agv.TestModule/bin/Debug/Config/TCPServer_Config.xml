@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- isEnabled : ON = 1, OFF = 0 -->
+<TCPServerConfig>
+  <ServerIP>192.168.0.112</ServerIP>
+  <ServerPort>7272</ServerPort>
+  <IsEnabled>1</IsEnabled>
+</TCPServerConfig>

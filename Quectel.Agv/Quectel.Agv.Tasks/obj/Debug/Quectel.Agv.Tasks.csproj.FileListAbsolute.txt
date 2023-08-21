@@ -1,0 +1,6 @@
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Tasks\bin\Debug\Quectel.Agv.Tasks.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Tasks\bin\Debug\Quectel.Agv.Tasks.pdb
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Tasks\obj\Debug\Quectel.Agv.Tasks.csproj.AssemblyReference.cache
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Tasks\obj\Debug\Quectel.Agv.Tasks.csproj.CoreCompileInputs.cache
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Tasks\obj\Debug\Quectel.Agv.Tasks.dll
+D:\code\标准框架\Quectel.Agv\Quectel.Agv.Tasks\obj\Debug\Quectel.Agv.Tasks.pdb

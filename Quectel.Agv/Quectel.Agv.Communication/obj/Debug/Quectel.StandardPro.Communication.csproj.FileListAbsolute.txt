@@ -1,0 +1,15 @@
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\bin\Debug\Quectel.StandardPro.Communication.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\bin\Debug\Quectel.StandardPro.Communication.pdb
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\bin\Debug\Newtonsoft.Json.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\bin\Debug\Quectel.StandardPro.Utils.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\bin\Debug\log4net.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\bin\Debug\SqlSugar.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\bin\Debug\Quectel.StandardPro.Utils.pdb
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\bin\Debug\Quectel.StandardPro.Utils.dll.config
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\bin\Debug\Newtonsoft.Json.xml
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\bin\Debug\log4net.xml
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\obj\Debug\Quectel.StandardPro.Communication.csproj.AssemblyReference.cache
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\obj\Debug\Quectel.StandardPro.Communication.csproj.CoreCompileInputs.cache
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\obj\Debug\Quectel.StandardPro.Communication.csproj.CopyComplete
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\obj\Debug\Quectel.StandardPro.Communication.dll
+D:\SVN\上位机软件标准框架\源码\Quectel.StandardPro\Quectel.StandardPro.Communication\obj\Debug\Quectel.StandardPro.Communication.pdb

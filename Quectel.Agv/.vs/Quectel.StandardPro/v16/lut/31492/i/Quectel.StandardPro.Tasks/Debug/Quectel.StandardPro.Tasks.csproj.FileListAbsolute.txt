@@ -1,0 +1,4 @@
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\Quectel.StandardPro.Tasks\bin\Debug\Quectel.StandardPro.Tasks.dll
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\Quectel.StandardPro.Tasks\Debug\Quectel.StandardPro.Tasks.csproj.CoreCompileInputs.cache
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\Quectel.StandardPro.Tasks\Debug\Quectel.StandardPro.Tasks.csproj.CopyComplete
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\Quectel.StandardPro.Tasks\Debug\Quectel.StandardPro.Tasks.dll

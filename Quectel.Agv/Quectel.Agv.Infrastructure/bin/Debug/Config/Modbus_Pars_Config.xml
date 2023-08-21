@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- dataType : BOOL = 0, BYTE = 1, INT = 2, SINGLE = 3, INTARRAY = 4, UINT16 = 5, UINT32 = 6, UINTARRAY = 7, BOOLARRAY = 8, USHORTARRAY = 9, TIMESPAN = 10, SHORT = 11 -->
+<!-- protocolType : POSITION_LINE = 0, ROLLER_LINE = 1 -->
+<!-- isGroup,isWrite,isArray : ON = 1, OFF = 0 -->
+<!-- SubType type : Coil = 0, InputStatus = 1, HoldingRegister = 2, InputRegister = 3 -->
+<ParsConfigs>
+
+  <Pars id="1" name="ModbusTest" protocolType="100">
+    <SubType typeName="0" readStartAddress="1" readOffset="2" writeStartAddress="1" writeOffset="2">
+      <par id="1" parName="coil_1" name="coil_1" dataType="0" isGroup="1" isWrite="0" isArray="0" arrayLength="0" startAddress="0" offset="1" bitOffset="-1"/>
+      <par id="2" parName="coil_2" name="coil_2" dataType="0" isGroup="1" isWrite="1" isArray="0" arrayLength="0" startAddress="1" offset="1" bitOffset="-1"/>
+    </SubType>
+    <SubType typeName="1" readStartAddress="10001" readOffset="2" writeStartAddress="10001" writeOffset="2">
+      <par id="1" parName="inputstatus_1" name="inputstatus_1" dataType="0" isGroup="1" isWrite="0" isArray="0" arrayLength="0" startAddress="0" offset="1" bitOffset="-1"/>
+      <par id="2" parName="inputstatus_2" name="inputstatus_2" dataType="0" isGroup="1" isWrite="0" isArray="0" arrayLength="0" startAddress="1" offset="1" bitOffset="-1"/>
+    </SubType>
+    <SubType typeName="2" readStartAddress="40001" readOffset="18" writeStartAddress="40001" writeOffset="16">
+      <par id="8" parName="rHeart" name="PLC心跳" dataType="0" isGroup="1" isWrite="0" isArray="0" arrayLength="0" startAddress="17" offset="1" bitOffset="0"/>
+      <par id="1" parName="holdingregister_1" name="holdingregister_1" dataType="3" isGroup="1" isWrite="0" isArray="0" arrayLength="0" startAddress="0" offset="4" bitOffset="-1"/>
+      <par id="2" parName="holdingregister_2" name="holdingregister_2" dataType="5" isGroup="1" isWrite="1" isArray="0" arrayLength="0" startAddress="2" offset="2" bitOffset="-1"/>
+      <par id="3" parName="wHeart" name="上位机心跳" dataType="0" isGroup="0" isWrite="1" isArray="0" arrayLength="0" startAddress="4" offset="1" bitOffset="0"/>
+      <par id="4" parName="test_write_bool" name="测试写入bool" dataType="0" isGroup="0" isWrite="1" isArray="0" arrayLength="0" startAddress="5" offset="1" bitOffset="4"/>
+      <par id="5" parName="test_write_1" name="测试写入SHORT" dataType="11" isGroup="0" isWrite="1" isArray="0" arrayLength="0" startAddress="6" offset="1" bitOffset="-1"/>
+      <par id="6" parName="test_write_2" name="测试写入int" dataType="2" isGroup="0" isWrite="1" isArray="0" arrayLength="0" startAddress="8" offset="4" bitOffset="-1"/>
+      <par id="7" parName="test_write_3" name="测试写入float" dataType="3" isGroup="0" isWrite="1" isArray="0" arrayLength="0" startAddress="12" offset="4" bitOffset="-1"/>
+    </SubType>
+    <SubType typeName="3" readStartAddress="30001" readOffset="8" writeStartAddress="30001" writeOffset="8">
+      <par id="1" parName="inputregister_1" name="inputregister_1" dataType="2" isGroup="1" isWrite="0" isArray="0" arrayLength="0" startAddress="0" offset="4" bitOffset="-1"/>
+      <par id="2" parName="inputregister_2" name="inputregister_2" dataType="3" isGroup="1" isWrite="0" isArray="0" arrayLength="0" startAddress="4" offset="4" bitOffset="-1"/>
+    </SubType>
+  </Pars>
+
+</ParsConfigs>

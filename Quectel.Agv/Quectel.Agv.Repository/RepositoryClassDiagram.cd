@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Quectel.Agv.Repository.Base.BaseRepository&lt;T&gt;">
+    <Position X="3" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEYAAAAAAYAAAgADAAAAAAAAECEAAAgAIAAAAAAAAAA=</HashCode>
+      <FileName>Base\BaseRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Repository.SqlSugar.DbContext">
+    <Position X="6.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAiAAIAAAAAAAIFQAAAAAACAAABAAAQAAAQBAAAAA=</HashCode>
+      <FileName>SqlSugar\DbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Repository.SqlSugar.FrameSeed">
+    <Position X="10" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAAAECAAAAQAAAgAAGAAEACgAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>SqlSugar\FrameSeed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Repository.SqlSugar.ToSqlExplain">
+    <Position X="8.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>SqlSugar\ToSqlExplain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Repository.UserInfoRepository">
+    <Position X="3" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserInfoRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Quectel.Agv.Repository.Interface.Base.IBaseRepository&lt;T&gt;">
+    <Position X="4.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEYAAAAAAYAAAgADAAAAAAAAECEAAAgAIAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Base\IBaseRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Quectel.Agv.Repository.Interface.IUserInfoRepository">
+    <Position X="4.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IUserInfoRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

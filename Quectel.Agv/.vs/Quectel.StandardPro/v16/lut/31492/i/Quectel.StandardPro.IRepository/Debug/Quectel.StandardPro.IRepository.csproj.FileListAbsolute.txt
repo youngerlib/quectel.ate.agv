@@ -1,0 +1,5 @@
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\Quectel.StandardPro.IRepository\bin\Debug\Config\Log4net.config
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\b\Quectel.StandardPro.IRepository\bin\Debug\Quectel.StandardPro.IRepository.dll
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\Quectel.StandardPro.IRepository\Debug\Quectel.StandardPro.IRepository.csproj.CoreCompileInputs.cache
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\Quectel.StandardPro.IRepository\Debug\Quectel.StandardPro.IRepository.csproj.CopyComplete
+D:\项目资料\标准项目框架\Quectel.StandardPro\.vs\Quectel.StandardPro\v16\lut\0\i\Quectel.StandardPro.IRepository\Debug\Quectel.StandardPro.IRepository.dll

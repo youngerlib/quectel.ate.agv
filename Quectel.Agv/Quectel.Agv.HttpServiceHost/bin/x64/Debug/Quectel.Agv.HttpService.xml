@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Quectel.Agv.HttpService</name>
+    </assembly>
+    <members>
+        <member name="T:Quectel.Agv.HttpService.App_Start.CachingSwaggerProvider">
+            <summary>
+            用于汉化Swagger
+            </summary>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.App_Start.CachingSwaggerProvider.#ctor(Swashbuckle.Swagger.ISwaggerProvider)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.App_Start.CachingSwaggerProvider.GetSwagger(System.String,System.String)">
+            <summary>
+            GetSwagger
+            </summary>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.App_Start.CachingSwaggerProvider.GetControllerDesc">
+            <summary>
+            从API文档中读取控制器描述
+            </summary>
+            <returns>所有控制器描述</returns>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.Controllers.DbFirstController.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.Controllers.DbFirstController.GetFrameFiles(System.String)">
+            <summary>
+            获取 整体框架 文件(主库)(一般可用第一次生成)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.Controllers.DbFirstController.GetAllFrameFilesByTableNames(System.String[],System.String)">
+            <summary>
+            DbFrist 根据数据库表名 生成整体框架,包含Model层(一般可用第一次生成)
+            </summary>
+            <param name="tableNames">需要生成的表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.Controllers.DbFirstController.GetFrameFilesByTableNames(System.String[],System.String)">
+            <summary>
+            获取仓储层和服务层(需指定表名和数据库)
+            </summary>
+            <param name="tableNames">需要生成的表名</param>
+            <returns></returns>        
+        </member>
+        <member name="M:Quectel.Agv.HttpService.Controllers.DbFirstController.GetFrameFilesByTableNamesForEntity(System.String[],System.String)">
+            <summary>
+            获取实体(需指定表名和数据库)
+            </summary>
+            <param name="tableNames">需要生成的表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.Controllers.DbFirstController.GetFrameFilesByTableNamesForController(System.String[],System.String)">
+            <summary>
+            获取控制器(需指定表名和数据库)
+            </summary>
+            <param name="tableNames">需要生成的表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.Controllers.DbFirstController.Dispose(System.Boolean)">
+            <summary>
+            释放资源
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:Quectel.Agv.HttpService.Controllers.TestController">
+            <summary>
+            测试接口
+            </summary>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.Controllers.TestController.TestGet(System.String)">
+            <summary>
+            测试GET请求
+            </summary>
+            <param name="val">测试参数</param>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.Controllers.TestController.TestPost(Quectel.Agv.HttpService.Controllers.TestPostData)">
+            <summary>
+            测试POST请求
+            </summary>
+            <param name="data">POST数据</param>
+        </member>
+        <member name="T:Quectel.Agv.HttpService.Controllers.TestGetResult">
+            <summary>
+            TestGet接口返回结果
+            </summary>
+        </member>
+        <member name="P:Quectel.Agv.HttpService.Controllers.TestGetResult.testValue1">
+            <summary>
+            测试数据1
+            </summary>
+        </member>
+        <member name="P:Quectel.Agv.HttpService.Controllers.TestGetResult.testValue2">
+            <summary>
+            测试数据2
+            </summary>
+        </member>
+        <member name="P:Quectel.Agv.HttpService.Controllers.TestGetResult.testValue3">
+            <summary>
+            测试数据3
+            </summary>
+        </member>
+        <member name="T:Quectel.Agv.HttpService.Controllers.TestPostData">
+            <summary>
+            TestPost接口参数
+            </summary>
+        </member>
+        <member name="P:Quectel.Agv.HttpService.Controllers.TestPostData.testArg">
+            <summary>
+            测试参数1
+            </summary>
+        </member>
+        <member name="P:Quectel.Agv.HttpService.Controllers.TestPostData.testTime">
+            <summary>
+            测试日期参数
+            </summary>
+        </member>
+        <member name="T:Quectel.Agv.HttpService.Controllers.TestPostResult">
+            <summary>
+            TestPost接口返回结果
+            </summary>
+        </member>
+        <member name="P:Quectel.Agv.HttpService.Controllers.TestPostResult.testValue1">
+            <summary>
+            测试数据1
+            </summary>
+        </member>
+        <member name="T:Quectel.Agv.HttpService.Filter.MyActionFilter">
+            <summary>
+            拦截器
+            </summary>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.Filter.MyActionFilter.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            执行方法前
+            </summary>
+        </member>
+        <member name="M:Quectel.Agv.HttpService.Filter.MyActionFilter.OnActionExecutedAsync(System.Web.Http.Filters.HttpActionExecutedContext,System.Threading.CancellationToken)">
+            <summary>
+            执行方法后
+            </summary>
+        </member>
+    </members>
+</doc>

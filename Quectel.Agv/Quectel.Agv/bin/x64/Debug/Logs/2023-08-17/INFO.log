@@ -1,0 +1,207 @@
+2023-08-17 10:42:39,635 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:42:39,730 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:42:39,734 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:42:39,738 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:42:39,742 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:42:39,749 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:42:39,755 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:42:39,758 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:42:39,765 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:42:39,770 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:42:39,776 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:42:39,789 [1] INFO  Quectel.Agv.App - 进入系统!
+2023-08-17 10:53:27,500 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:53:27,593 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:53:27,598 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:53:27,602 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:53:27,605 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:53:27,610 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:53:27,613 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:53:27,615 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:53:27,619 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:53:27,621 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:53:27,625 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:53:27,634 [1] INFO  Quectel.Agv.App - 进入系统!
+2023-08-17 10:54:45,249 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:54:45,333 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:54:45,337 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:54:45,340 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:54:45,343 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:54:45,349 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:54:45,356 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:54:45,359 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:54:45,364 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:54:45,368 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:54:45,371 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:54:45,381 [1] INFO  Quectel.Agv.App - 进入系统!
+2023-08-17 10:55:39,124 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:55:39,198 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:55:39,201 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:55:39,205 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:55:39,208 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:55:39,212 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:55:39,215 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:55:39,218 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:55:39,222 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:55:39,225 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:55:39,229 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:55:39,237 [1] INFO  Quectel.Agv.App - 进入系统!
+2023-08-17 10:56:00,775 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:00,859 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:00,863 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:00,866 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:00,870 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:00,874 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:00,878 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:00,880 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:00,883 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:00,886 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:00,889 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:00,898 [1] INFO  Quectel.Agv.App - 进入系统!
+2023-08-17 10:56:17,100 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:17,252 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:17,256 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:17,259 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:17,263 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:17,268 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:17,272 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:17,276 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:17,279 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:17,283 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:17,286 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:56:17,295 [1] INFO  Quectel.Agv.App - 进入系统!
+2023-08-17 10:57:45,611 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:57:45,762 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:57:45,767 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:57:45,771 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:57:45,775 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:57:45,785 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:57:45,795 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:57:45,806 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:57:45,812 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:57:45,817 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:57:45,822 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 10:57:45,838 [1] INFO  Quectel.Agv.App - 进入系统!
+2023-08-17 13:15:53,594 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:15:53,691 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:15:53,698 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:15:53,709 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:15:53,720 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:15:53,734 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:15:53,747 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:15:53,754 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:15:53,768 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:15:53,778 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:15:53,790 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:15:53,815 [1] INFO  Quectel.Agv.App - 进入系统!
+2023-08-17 13:41:05,294 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:41:05,476 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:41:05,483 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:41:05,488 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:41:05,493 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:41:05,499 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:41:05,504 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:41:05,507 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:41:05,511 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:41:05,516 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:41:05,520 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-17 13:41:05,532 [1] INFO  Quectel.Agv.App - 进入系统!

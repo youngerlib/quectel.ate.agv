@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- isEnabled : ON = 1, OFF = 0 -->
+<!-- 按照顺序排序 ABCD = 0, 按照单字反转 BADC = 1, 按照双字反转 CDAB = 2, 按照倒序排序 DCBA = 3 -->
+<PLCConfigs>
+  <PLC id="1" name="测试FinsTcp" type="300" ip="192.168.250.2" port="9600" rack="0" slot="1" plcUnit="0" localNumber="7" parID ="1" protocolType="0" isEnabled="1" dataFormat="2" connectTimeOut="2000" interval="6000"></PLC>
+</PLCConfigs>

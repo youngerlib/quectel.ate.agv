@@ -1,0 +1,7 @@
+@echo.·þÎñÉ¾³ý  
+@echo off  
+@net stop QuectelHttpService
+@sc delete QuectelHttpService
+@echo off  
+@echo.É¾³ý½áÊø£¡  
+@pause

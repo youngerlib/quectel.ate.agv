@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CEA0295B-3328-4C76-8957-693BAD93C84A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quectel.StandardPro.Framework</RootNamespace>
+    <AssemblyName>Quectel.Agv.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\PresentationFramework.4.6.0\lib\PresentationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core.Entity\Core.Entity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Core.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core.IRepository\Core.IRepository.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Core.IRepository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core.IService\Core.IService.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Core.IService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core.Repository\Core.Repository.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Core.Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core.Service\Core.Service.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Core.Service.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain.Entity\Domain.Entity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Domain.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain.IRepository\Domain.IRepository.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Domain.IRepository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain.IService\Domain.IService.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Domain.IService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain.Repository\Domain.Repository.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Domain.Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain.Service\Domain.Service.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Domain.Service.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StandardPro.Model\StandardPro.Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StandardPro.Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StandardPro.ViewModel\StandardPro.ViewModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StandardPro.ViewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StandardPro.View\StandardPro.View.cs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StandardPro.View.cs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StandardPro.View\StandardPro.View.xaml.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StandardPro.View.xaml.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core.Entity\Core.Entity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Core.Entity.cs</LastGenOutput>
+    </Content>
+    <Content Include="Core.IRepository\Core.IRepository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Core.IRepository.cs</LastGenOutput>
+    </Content>
+    <Content Include="Core.IService\Core.IService.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Core.IService.cs</LastGenOutput>
+      <TransformOnBuild>False</TransformOnBuild>
+    </Content>
+    <Content Include="Core.Repository\Core.Repository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Core.Repository.cs</LastGenOutput>
+    </Content>
+    <Content Include="Core.Service\Core.Service.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Core.Service.cs</LastGenOutput>
+    </Content>
+    <Content Include="CoreConfig.txt" />
+    <Content Include="Domain.Entity\Domain.Entity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Domain.Entity.cs</LastGenOutput>
+    </Content>
+    <Content Include="Domain.IRepository\Domain.IRepository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Domain.IRepository.cs</LastGenOutput>
+    </Content>
+    <Content Include="Domain.IService\Domain.IService.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Domain.IService.cs</LastGenOutput>
+    </Content>
+    <Content Include="Domain.Repository\Domain.Repository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Domain.Repository.cs</LastGenOutput>
+    </Content>
+    <Content Include="Domain.Service\Domain.Service.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Domain.Service.cs</LastGenOutput>
+    </Content>
+    <Content Include="DomainConfig.txt" />
+    <Content Include="MvvmConfig.txt" />
+    <Content Include="StandardPro.Model\StandardPro.Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>StandardPro.Model.cs</LastGenOutput>
+    </Content>
+    <Content Include="StandardPro.ViewModel\StandardPro.ViewModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>StandardPro.ViewModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="StandardPro.View\StandardPro.View.cs.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>StandardPro.View.cs.cs</LastGenOutput>
+    </Content>
+    <Content Include="StandardPro.View\StandardPro.View.xaml.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>StandardPro.View.xaml.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MultipleOutputHelper.ttinclude" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

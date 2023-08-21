@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC5B3FE0-5F06-4B48-B791-2CD2460CF490}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quectel.StandardPro.Domain</RootNamespace>
+    <AssemblyName>Quectel.Agv.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SqlSugar, Version=5.1.4.71, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SqlSugar.5.1.4.71\lib\SqlSugar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VisionInspection\Entity\Config.cs" />
+    <Compile Include="VisionInspection\Entity\ControlCenter.cs" />
+    <Compile Include="VisionInspection\Entity\DetectResultData.cs" />
+    <Compile Include="VisionInspection\Entity\Location.cs" />
+    <Compile Include="VisionInspection\Entity\Mechanism.cs" />
+    <Compile Include="VisionInspection\Entity\Model.cs" />
+    <Compile Include="VisionInspection\Entity\Plc.cs" />
+    <Compile Include="VisionInspection\Entity\Robot.cs" />
+    <Compile Include="VisionInspection\Entity\test.cs" />
+    <Compile Include="VisionInspection\Entity\Vision.cs" />
+    <Compile Include="VisionInspection\Repository\ConfigRepository.cs" />
+    <Compile Include="VisionInspection\Repository\ControlCenterRepository.cs" />
+    <Compile Include="VisionInspection\Repository\DetectResultDataRepository.cs" />
+    <Compile Include="VisionInspection\Repository\Interface\IConfigRepository.cs" />
+    <Compile Include="VisionInspection\Repository\Interface\IControlCenterRepository.cs" />
+    <Compile Include="VisionInspection\Repository\Interface\IDetectResultDataRepository.cs" />
+    <Compile Include="VisionInspection\Repository\Interface\ILocationRepository.cs" />
+    <Compile Include="VisionInspection\Repository\Interface\IMechanismRepository.cs" />
+    <Compile Include="VisionInspection\Repository\Interface\IModelRepository.cs" />
+    <Compile Include="VisionInspection\Repository\Interface\IPlcRepository.cs" />
+    <Compile Include="VisionInspection\Repository\Interface\IRobotRepository.cs" />
+    <Compile Include="VisionInspection\Repository\Interface\ItestRepository.cs" />
+    <Compile Include="VisionInspection\Repository\Interface\IVisionRepository.cs" />
+    <Compile Include="VisionInspection\Repository\LocationRepository.cs" />
+    <Compile Include="VisionInspection\Repository\MechanismRepository.cs" />
+    <Compile Include="VisionInspection\Repository\ModelRepository.cs" />
+    <Compile Include="VisionInspection\Repository\PlcRepository.cs" />
+    <Compile Include="VisionInspection\Repository\RobotRepository.cs" />
+    <Compile Include="VisionInspection\Repository\testRepository.cs" />
+    <Compile Include="VisionInspection\Repository\VisionInspectionDbContext.cs" />
+    <Compile Include="VisionInspection\Repository\VisionRepository.cs" />
+    <Compile Include="VisionInspection\Service\ConfigService.cs" />
+    <Compile Include="VisionInspection\Service\ControlCenterService.cs" />
+    <Compile Include="VisionInspection\Service\DetectResultDataService.cs" />
+    <Compile Include="VisionInspection\Service\Interface\IConfigService.cs" />
+    <Compile Include="VisionInspection\Service\Interface\IControlCenterService.cs" />
+    <Compile Include="VisionInspection\Service\Interface\IDetectResultDataService.cs" />
+    <Compile Include="VisionInspection\Service\Interface\ILocationService.cs" />
+    <Compile Include="VisionInspection\Service\Interface\IMechanismService.cs" />
+    <Compile Include="VisionInspection\Service\Interface\IModelService.cs" />
+    <Compile Include="VisionInspection\Service\Interface\IPlcService.cs" />
+    <Compile Include="VisionInspection\Service\Interface\IRobotService.cs" />
+    <Compile Include="VisionInspection\Service\Interface\ItestService.cs" />
+    <Compile Include="VisionInspection\Service\Interface\IVisionService.cs" />
+    <Compile Include="VisionInspection\Service\LocationService.cs" />
+    <Compile Include="VisionInspection\Service\MechanismService.cs" />
+    <Compile Include="VisionInspection\Service\ModelService.cs" />
+    <Compile Include="VisionInspection\Service\PlcService.cs" />
+    <Compile Include="VisionInspection\Service\RobotService.cs" />
+    <Compile Include="VisionInspection\Service\testService.cs" />
+    <Compile Include="VisionInspection\Service\VisionService.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Quectel.Agv.CommonView\Quectel.Agv.CommonView.csproj">
+      <Project>{8A61151D-1E90-4669-9CEF-8CC018496D1E}</Project>
+      <Name>Quectel.Agv.CommonView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Quectel.Agv.Entity\Quectel.Agv.Entity.csproj">
+      <Project>{6FBD900F-C309-4E12-8AF7-960BB8250247}</Project>
+      <Name>Quectel.Agv.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Quectel.Agv.Repository\Quectel.Agv.Repository.csproj">
+      <Project>{E4831633-B3F6-4F0A-B90F-296833E3B6AD}</Project>
+      <Name>Quectel.Agv.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Quectel.Agv.Service\Quectel.Agv.Service.csproj">
+      <Project>{F4E77877-1E73-405A-B3F6-9AD44E51DE55}</Project>
+      <Name>Quectel.Agv.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,708 @@
+﻿<UserControl
+    x:Class="Quectel.Agv.Views.VisionToolView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:extToolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:localhelper="clr-namespace:Quectel.Agv.Helper"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    d:DesignHeight="600"
+    d:DesignWidth="900"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+
+        <localhelper:TreeViewLineConverter x:Key="LineConverter" />
+
+        <!--  Toggle Button  -->
+        <Style x:Key="ExpandCollapseToggleStyle" TargetType="ToggleButton">
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Grid
+                            Width="15"
+                            Height="13"
+                            SnapsToDevicePixels="True">
+                            <Rectangle
+                                Width="9"
+                                Height="9"
+                                SnapsToDevicePixels="true"
+                                Stroke="#919191">
+                                <Rectangle.Fill>
+                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,2">
+                                        <GradientStop Offset="0" Color="White" />
+                                        <GradientStop Offset="0.5" Color="Silver" />
+                                        <GradientStop Offset="1" Color="LightGray" />
+                                    </LinearGradientBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Rectangle
+                                x:Name="ExpandPath"
+                                Width="1"
+                                Height="5"
+                                SnapsToDevicePixels="true"
+                                Stroke="Black" />
+                            <Rectangle
+                                Width="5"
+                                Height="1"
+                                SnapsToDevicePixels="true"
+                                Stroke="Black" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="ExpandPath" Property="Visibility" Value="Collapsed" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--  TreeViewItem  -->
+        <Style x:Key="{x:Type TreeViewItem}" TargetType="{x:Type TreeViewItem}">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Padding" Value="1,0,0,0" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TreeViewItem}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" MinWidth="19" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+
+                            <!--  Connecting Lines  -->
+                            <Rectangle
+                                x:Name="HorLn"
+                                Height="1"
+                                Margin="9,1,0,0"
+                                SnapsToDevicePixels="True"
+                                Stroke="#DCDCDC" />
+                            <Rectangle
+                                x:Name="VerLn"
+                                Grid.RowSpan="2"
+                                Width="1"
+                                Margin="0,0,1,0"
+                                Fill="White"
+                                SnapsToDevicePixels="true"
+                                Stroke="#DCDCDC" />
+                            <ToggleButton
+                                x:Name="Expander"
+                                Margin="-1,0,0,0"
+                                ClickMode="Press"
+                                IsChecked="{Binding Path=IsExpanded, RelativeSource={RelativeSource TemplatedParent}}"
+                                Style="{StaticResource ExpandCollapseToggleStyle}" />
+                            <StackPanel
+                                Grid.Column="1"
+                                Grid.ColumnSpan="2"
+                                Orientation="Horizontal">
+                                <materialDesign:PackIcon
+                                    Width="20"
+                                    Height="20"
+                                    Margin="1"
+                                    Foreground="White"
+                                    Kind="CameraOutline" />
+                                <Border
+                                    Name="Bd"
+                                    Padding="{TemplateBinding Padding}"
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    SnapsToDevicePixels="True">
+                                    <ContentPresenter
+                                        x:Name="PART_Header"
+                                        MinWidth="20"
+                                        HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                        ContentSource="Header" />
+                                </Border>
+                            </StackPanel>
+
+                            <ItemsPresenter
+                                x:Name="ItemsHost"
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Grid.ColumnSpan="2" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+
+                            <!--  This trigger changes the connecting lines if the item is the last in the list  -->
+                            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource LineConverter}}" Value="true">
+                                <Setter TargetName="VerLn" Property="Height" Value="9" />
+                                <Setter TargetName="VerLn" Property="VerticalAlignment" Value="Top" />
+                            </DataTrigger>
+                            <Trigger Property="IsExpanded" Value="false">
+                                <Setter TargetName="ItemsHost" Property="Visibility" Value="Collapsed" />
+                            </Trigger>
+                            <Trigger Property="HasItems" Value="false">
+                                <Setter TargetName="Expander" Property="Visibility" Value="Hidden" />
+                            </Trigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="HasHeader" Value="false" />
+                                    <Condition Property="Width" Value="Auto" />
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="PART_Header" Property="MinWidth" Value="75" />
+                            </MultiTrigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="HasHeader" Value="false" />
+                                    <Condition Property="Height" Value="Auto" />
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="PART_Header" Property="MinHeight" Value="19" />
+                            </MultiTrigger>
+                            <Trigger Property="IsSelected" Value="true">
+                                <Setter TargetName="Bd" Property="Background" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" />
+                            </Trigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsSelected" Value="true" />
+                                    <Condition Property="IsSelectionActive" Value="false" />
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="Bd" Property="Background" Value="Green" />
+                                <Setter Property="Foreground" Value="White" />
+                            </MultiTrigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <DockPanel>
+        <Border
+            Width="350"
+            Background="#203843"
+            BorderBrush="White"
+            BorderThickness="1"
+            CornerRadius="4"
+            DockPanel.Dock="Left">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="8*" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+
+                <Border
+                    Grid.Row="0"
+                    BorderBrush="White"
+                    BorderThickness="1"
+                    CornerRadius="4">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="8*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock
+                            Grid.Column="0"
+                            Margin="5,0,0,0"
+                            VerticalAlignment="Center"
+                            FontSize="20"
+                            Foreground="White"
+                            Text="设备列表：" />
+                        <TextBlock
+                            Grid.Column="1"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontFamily="{StaticResource IconFont}"
+                            FontSize="20"
+                            Foreground="White"
+                            Text="&#xe636;">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="MouseDown">
+                                    <i:InvokeCommandAction Command="{Binding CommandLogin}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </TextBlock>
+                    </Grid>
+
+                </Border>
+
+                <Grid Grid.Row="1">
+                    <TreeView BorderThickness="0" FontSize="18">
+                        <TreeViewItem Header="Uers" IsExpanded="True">
+                            <TreeViewItem Header="Default" />
+                            <TreeViewItem Header="Public" />
+                            <TreeViewItem Header="TUYEN" />
+                        </TreeViewItem>
+                        <TreeViewItem Header="Uers" IsExpanded="True">
+                            <TreeViewItem Header="Default" />
+                            <TreeViewItem Header="Public" />
+                            <TreeViewItem Header="TUYEN" />
+                        </TreeViewItem>
+                    </TreeView>
+                </Grid>
+
+                <Border
+                    Grid.Row="2"
+                    BorderBrush="White"
+                    BorderThickness="1"
+                    CornerRadius="4">
+                    <TextBlock
+                        Margin="5,0,0,0"
+                        VerticalAlignment="Center"
+                        FontSize="20"
+                        Foreground="White"
+                        Text="设备信息：" />
+                </Border>
+
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="6*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="2*" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Margin="8,10,0,0"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="设备厂家：" />
+                    <TextBlock
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Margin="8,10,0,0"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="设备型号：" />
+                    <TextBlock
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Margin="8,10,0,0"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="序列号：" />
+                    <TextBlock
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        Margin="8,10,0,0"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="设备版本：" />
+                    <TextBlock
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Margin="8,10,0,0"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="设备地址：" />
+
+                    <TextBlock
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Margin="8,10,0,0"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="HikCamera" />
+                    <TextBlock
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Margin="8,10,0,0"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="MV-CS050-10GC" />
+                    <TextBlock
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Margin="8,10,0,0"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="DA00508475" />
+                    <TextBlock
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        Margin="8,10,0,0"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="V1" />
+                    <TextBlock
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        Margin="8,10,0,0"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="192.168.123.123" />
+                </Grid>
+
+            </Grid>
+        </Border>
+        <Border
+            Width="350"
+            Background="#203843"
+            BorderBrush="White"
+            BorderThickness="1"
+            CornerRadius="4"
+            DockPanel.Dock="Right">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="9*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="7*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Margin="8,10,10,8"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="曝光时间：" />
+                    <TextBlock
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Margin="8,10,10,8"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="增益：" />
+                    <TextBlock
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Margin="8,10,10,8"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="伽马：" />
+                    <TextBlock
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        Margin="8,10,10,8"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="对比度：" />
+                    <TextBlock
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Margin="8,10,10,8"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="触发模式：" />
+                    <TextBlock
+                        Grid.Row="5"
+                        Grid.Column="0"
+                        Margin="8,10,10,8"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="触发源：" />
+                    <TextBlock
+                        Grid.Row="6"
+                        Grid.Column="0"
+                        Margin="8,10,10,8"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="触发延时：" />
+                    <TextBlock
+                        Grid.Row="7"
+                        Grid.Column="0"
+                        Margin="8,10,10,8"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="触发方式：" />
+                    <TextBlock
+                        Grid.Row="8"
+                        Grid.Column="0"
+                        Margin="8,10,10,8"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="信号过虑：" />
+                    <TextBlock
+                        Grid.Row="9"
+                        Grid.Column="0"
+                        Margin="8,10,10,8"
+                        FontSize="15"
+                        Foreground="White"
+                        Text="保存参数：" />
+
+
+                    <extToolkit:DecimalUpDown
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Margin="8,10,10,8"
+                        Background="Transparent"
+                        FontSize="15"
+                        Foreground="White" />
+                    <extToolkit:DecimalUpDown
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Margin="8,10,10,8"
+                        Background="Transparent"
+                        FontSize="15"
+                        Foreground="White" />
+                    <extToolkit:DecimalUpDown
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Margin="8,10,10,8"
+                        Background="Transparent"
+                        FontSize="15"
+                        Foreground="White" />
+                    <extToolkit:DecimalUpDown
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        Margin="8,10,10,8"
+                        Background="Transparent"
+                        FontSize="15"
+                        Foreground="White" />
+
+                    <ComboBox
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        Margin="8,8,8,8"
+                        BorderBrush="#FFABADB3"
+                        BorderThickness="1"
+                        FontSize="15"
+                        Foreground="White" />
+
+
+                    <StackPanel
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        Margin="8,8,8,8"
+                        Orientation="Horizontal">
+                        <ComboBox
+                            Width="200"
+                            BorderBrush="#FFABADB3"
+                            BorderThickness="1"
+                            FontSize="15"
+                            Foreground="White" />
+                        <materialDesign:PackIcon
+                            Width="25"
+                            Height="25"
+                            Margin="5,0,0,0"
+                            VerticalAlignment="Center"
+                            Kind="GestureDoubleTap" />
+                    </StackPanel>
+
+                    <extToolkit:DecimalUpDown
+                        Grid.Row="6"
+                        Grid.Column="1"
+                        Margin="8,10,10,8"
+                        Background="Transparent"
+                        FontSize="15"
+                        Foreground="White" />
+
+                    <ComboBox
+                        Grid.Row="7"
+                        Grid.Column="1"
+                        Margin="8,8,8,8"
+                        BorderBrush="#FFABADB3"
+                        BorderThickness="1"
+                        FontSize="15"
+                        Foreground="White" />
+
+                    <extToolkit:DecimalUpDown
+                        Grid.Row="8"
+                        Grid.Column="1"
+                        Margin="8,10,10,8"
+                        Background="Transparent"
+                        FontSize="15"
+                        Foreground="White" />
+
+                    <StackPanel
+                        Grid.Row="9"
+                        Grid.Column="1"
+                        Margin="8,8,8,8"
+                        Orientation="Horizontal">
+                        <ComboBox
+                            Width="200"
+                            BorderBrush="#FFABADB3"
+                            BorderThickness="1"
+                            FontSize="15"
+                            Foreground="White" />
+                        <materialDesign:PackIcon
+                            Width="25"
+                            Height="25"
+                            Margin="5,0,0,0"
+                            VerticalAlignment="Center"
+                            Kind="ContentSaveOutline" />
+                    </StackPanel>
+
+
+                </Grid>
+
+                <UniformGrid
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Columns="2">
+                    <Button
+                        Margin="5,0,5,0"
+                        Background="#008040"
+                        Command="{Binding CommandStart}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock
+                                Margin="5,0,5,0"
+                                VerticalAlignment="Center"
+                                FontFamily="{StaticResource IconFont}"
+                                FontSize="18"
+                                Text="&#xe6af;" />
+                            <TextBlock
+                                Margin="5,0,5,0"
+                                VerticalAlignment="Center"
+                                Text="打开相机" />
+                        </StackPanel>
+                    </Button>
+
+                    <Button
+                        Margin="5,0,5,0"
+                        Background="#ffc060"
+                        Command="{Binding CommandData}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock
+                                Margin="5,0,5,0"
+                                VerticalAlignment="Center"
+                                FontFamily="{StaticResource IconFont}"
+                                FontSize="18"
+                                Text="&#xe61a;" />
+                            <TextBlock
+                                Margin="5,0,5,0"
+                                VerticalAlignment="Center"
+                                Text="关闭相机" />
+                        </StackPanel>
+                    </Button>
+                </UniformGrid>
+            </Grid>
+        </Border>
+
+        <Grid Background="#203843">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="8*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+
+            <Border
+                Grid.Row="0"
+                BorderBrush="White"
+                BorderThickness="1"
+                CornerRadius="4">
+                <StackPanel FlowDirection="RightToLeft" Orientation="Horizontal">
+                    <materialDesign:PackIcon
+                        Width="30"
+                        Height="27"
+                        Margin="6"
+                        Foreground="White"
+                        Kind="CameraOutline" />
+                    <materialDesign:PackIcon
+                        Width="30"
+                        Height="27"
+                        Margin="6"
+                        Foreground="White"
+                        Kind="ContentCopy" />
+                    <materialDesign:PackIcon
+                        Width="30"
+                        Height="27"
+                        Margin="6"
+                        Foreground="White"
+                        Kind="MagnifyMinusOutline" />
+                    <materialDesign:PackIcon
+                        Width="30"
+                        Height="27"
+                        Margin="6"
+                        Foreground="White"
+                        Kind="MagnifyRemoveOutline" />
+                </StackPanel>
+            </Border>
+
+            <Border
+                Grid.Row="1"
+                BorderBrush="White"
+                BorderThickness="1"
+                CornerRadius="4" />
+
+            <Border
+                Grid.Row="2"
+                BorderBrush="White"
+                BorderThickness="1"
+                CornerRadius="4">
+                <GroupBox
+                    Margin="10"
+                    materialDesign:ColorZoneAssist.Mode="SecondaryMid"
+                    Background="#203843"
+                    Header="系统信息"
+                    Style="{DynamicResource MaterialDesignCardGroupBox}">
+                    <GroupBox.HeaderTemplate>
+                        <DataTemplate>
+                            <DockPanel>
+                                <materialDesign:PackIcon
+                                    Width="15"
+                                    Height="15"
+                                    VerticalAlignment="Center"
+                                    Kind="CardTextOutline" />
+                                <TextBlock
+                                    Margin="8,0,0,0"
+                                    VerticalAlignment="Center"
+                                    FontSize="12"
+                                    Style="{StaticResource MaterialDesignBody1TextBlock}"
+                                    Text="{Binding}" />
+                                <Button
+                                    x:Name="ClearUILogBtn"
+                                    Width="30"
+                                    Height="30"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Top"
+                                    Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type GroupBox}}, Path=DataContext.ClearUILogCommand}"
+                                    Style="{StaticResource MaterialDesignIconButton}"
+                                    ToolTip="清空系统信息">
+                                    <materialDesign:PackIcon
+                                        Width="20"
+                                        Height="20"
+                                        Kind="Autorenew" />
+                                </Button>
+                            </DockPanel>
+                        </DataTemplate>
+                    </GroupBox.HeaderTemplate>
+                    <RichTextBox
+                        x:Name="RunLog"
+                        localhelper:RichTextBoxHelper.RichText="{Binding RichText}"
+                        IsReadOnly="True"
+                        VerticalScrollBarVisibility="Auto">
+                        <RichTextBox.Document>
+                            <FlowDocument LineHeight="5">
+                                <Paragraph Foreground="Blue">系统信息.</Paragraph>
+                            </FlowDocument>
+                        </RichTextBox.Document>
+                    </RichTextBox>
+                </GroupBox>
+            </Border>
+        </Grid>
+
+    </DockPanel>
+</UserControl>

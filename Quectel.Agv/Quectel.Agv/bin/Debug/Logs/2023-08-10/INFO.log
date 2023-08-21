@@ -1,0 +1,41 @@
+2023-08-10 16:16:30,485 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-10 16:16:30,501 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - CREATE TABLE "Sys_UserInfo"(
+"Id" integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+"LoginName" varchar(255) NULL  ,
+"PassWord" varchar(255) NULL  ,
+"UserName" varchar(255) NULL  ,
+"Email" varchar(255) NULL  ,
+"PhoneNum" varchar(255) NULL  ,
+"BirthDate" datetime NULL  ,
+"Post" varchar(255) NULL  ,
+"DeptID" bigint NULL  ,
+"RoleIds" varchar(255) NULL  ,
+"ErrorCount" integer NULL  ,
+"LockTime" datetime NULL  ,
+"CreateBy" varchar(255) NULL  ,
+"CreateTime" datetime NOT NULL  ,
+"ModifyBy" varchar(255) NULL  ,
+"ModifyTime" datetime NULL  ,
+"IsDeleted" bit NOT NULL    )
+{}
+2023-08-10 16:16:30,590 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-10 16:16:30,604 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - CREATE TABLE "Vision"(
+"Id" integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+"CreateBy" varchar(255) NULL  ,
+"CreateTime" datetime NOT NULL  ,
+"ModifyBy" varchar(255) NULL  ,
+"ModifyTime" datetime NULL  ,
+"IsDeleted" bit NOT NULL    )
+{}
+2023-08-10 16:16:30,646 [1] INFO  Quectel.Agv.App - 进入系统!
+2023-08-10 16:16:30,747 [1] INFO  Quectel.Agv.Service.UserInfoService - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-10 16:17:09,203 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-10 16:17:09,250 [1] INFO  Quectel.Agv.Repository.SqlSugar.DbContext - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}
+2023-08-10 16:17:09,270 [1] INFO  Quectel.Agv.App - 进入系统!
+2023-08-10 16:17:09,305 [1] INFO  Quectel.Agv.Service.UserInfoService - select Name from sqlite_master where type='table' and name<>'sqlite_sequence' order by name;
+{}

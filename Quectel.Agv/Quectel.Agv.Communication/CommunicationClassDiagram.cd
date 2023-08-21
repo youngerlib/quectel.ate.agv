@@ -1,0 +1,1138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Common.Model.mCommonPLCProtocol" Collapsed="true">
+    <Position X="19" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\Common\Model\mCommonPLCProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Common.Model.mPar" Collapsed="true">
+    <Position X="36" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAgAAQAAAAAAAAAAACFIAgAAEAAAAAAgAAAAAAgA=</HashCode>
+      <FileName>AnalyseProtocol\Common\Model\mPar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Common.Model.mPLC" Collapsed="true">
+    <Position X="37.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAxQAAAIAAAAAQAAAAoAAAiAAIAEACAE0AACAAAAEgA=</HashCode>
+      <FileName>AnalyseProtocol\Common\Model\mPLC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Common.Model.mProtocol" Collapsed="true">
+    <Position X="19" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\Common\Model\mProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Common.Tool.DataHelper" Collapsed="true">
+    <Position X="37.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUACAAAAAAAAAAAAAgAAAAEADACAAAAQAAEAAAACBA=</HashCode>
+      <FileName>AnalyseProtocol\Common\Tool\DataHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.FinsTCP.FinsTCPPLCFun" Collapsed="true">
+    <Position X="9.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCTIAAACIAEEAAFAAIAAACiFEMAAAAAAAAgBEAAAg=</HashCode>
+      <FileName>AnalyseProtocol\FinsTCP\FinsTCPPLCFun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.FinsTCP.FinsTCPPLCsManager" Collapsed="true">
+    <Position X="46.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgCAQIAAAAEwRDABAAEAEACBAAAEEAQAAAAAEAAAA=</HashCode>
+      <FileName>AnalyseProtocol\FinsTCP\FinsTCPPLCsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.FinsTCP.FinsTCPPLCTest" Collapsed="true">
+    <Position X="9.5" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\FinsTCP\FinsTCPPLCTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.FinsTCP.mFinsTCPPLCProtocol" Collapsed="true">
+    <Position X="22.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAEIAAAAAQAgCAAEECAAAAAAAAAAAgA=</HashCode>
+      <FileName>AnalyseProtocol\FinsTCP\mFinsTCPPLCProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.FinsTCP.mFinsTCPTestProtocol" Collapsed="true">
+    <Position X="22.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAgAAAAAAQQCIAAAAAACAAAAAABAAAAAACA=</HashCode>
+      <FileName>AnalyseProtocol\FinsTCP\mFinsTCPTestProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Modbus.mModbusPLCProtocol" Collapsed="true">
+    <Position X="15.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAUACAAAAAAAAAAAgA=</HashCode>
+      <FileName>AnalyseProtocol\Modbus\mModbusPLCProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Modbus.mModbusTestProtocol" Collapsed="true">
+    <Position X="15.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAABAAABgAAAgAAAAAAAQAAAAACAAACA=</HashCode>
+      <FileName>AnalyseProtocol\Modbus\mModbusTestProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Modbus.ModbusPLCFun" Collapsed="true">
+    <Position X="6.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IA4DDIAAAKYgAEACFAAAAIAAyFEMAAAACAYAghEAAgg=</HashCode>
+      <FileName>AnalyseProtocol\Modbus\ModbusPLCFun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Modbus.ModbusPLCsManager" Collapsed="true">
+    <Position X="44.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAQIAAAAEwQDABAAEAEAiBAAIEEAQAAAABkAAAA=</HashCode>
+      <FileName>AnalyseProtocol\Modbus\ModbusPLCsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Modbus.ModbusPLCTest" Collapsed="true">
+    <Position X="6.5" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\Modbus\ModbusPLCTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Modbus.mSubModbusProtocol" Collapsed="true">
+    <Position X="39.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAEIAAAAAQAgAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\Modbus\mSubModbusProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Ona3E.mOna3EPLCProtocol" Collapsed="true">
+    <Position X="20.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAEACAAAAAAAAAAAgA=</HashCode>
+      <FileName>AnalyseProtocol\Ona3E\mOna3EPLCProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Ona3E.mOna3ETestProtocol" Collapsed="true">
+    <Position X="20.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAgAAAAAATQCIAAAAAACAAAAIABAAAAAECA=</HashCode>
+      <FileName>AnalyseProtocol\Ona3E\mOna3ETestProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Ona3E.mSubOna3EProtocol" Collapsed="true">
+    <Position X="41.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAEIAAAAAQAgAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\Ona3E\mSubOna3EProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Ona3E.Ona3EPLCFun" Collapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYSDIAAAKJAAEACFAAAAAACiFEMAAAAAAAAgDEQAAg=</HashCode>
+      <FileName>AnalyseProtocol\Ona3E\Ona3EPLCFun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Ona3E.Ona3EPLCsManager" Collapsed="true">
+    <Position X="48.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAQIAgAAEwRDABAAEAEAiBAAAEEAQAAAABEAAAA=</HashCode>
+      <FileName>AnalyseProtocol\Ona3E\Ona3EPLCsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.Ona3E.Ona3EPLCTest" Collapsed="true">
+    <Position X="20.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\Ona3E\Ona3EPLCTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.S7.mS7PLCProtocol" Collapsed="true">
+    <Position X="18" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAEIAAAAAQAgCAAEECAAAAAAAAAAAgA=</HashCode>
+      <FileName>AnalyseProtocol\S7\mS7PLCProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.S7.mS7TestProtocol" Collapsed="true">
+    <Position X="18" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAgAAAAAAQQCIAAAAAACAAAAAABAAAAAACA=</HashCode>
+      <FileName>AnalyseProtocol\S7\mS7TestProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.S7.S7PLCFun" Collapsed="true">
+    <Position X="3.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AA4CTIAAACIAEEAAFAAIAAACiFEMAAAAAAAAgBEAAAg=</HashCode>
+      <FileName>AnalyseProtocol\S7\S7PLCFun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.S7.S7PLCsManager" Collapsed="true">
+    <Position X="44.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAICAQIAAAAEwQDAhYAEAEAiBAAAGEAQAAAABEAAAA=</HashCode>
+      <FileName>AnalyseProtocol\S7\S7PLCsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.AnalyseProtocol.S7.S7PLCTest" Collapsed="true">
+    <Position X="3.5" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\S7\S7PLCTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.BasicFramework.SoftFileSaveBase" Collapsed="true">
+    <Position X="0.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQhAAAAAAAAAAAAAAAAgAAAgQEAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicFramework\SoftBaseClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.BasicFramework.SoftBasic" Collapsed="true">
+    <Position X="36" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCmAoAAAkCBoAgAECAAoAEAMAABgCgAAAAoAAAgAA=</HashCode>
+      <FileName>BasicFramework\SoftBasic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.BasicFramework.SoftBuffer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAiAAAggACAAAgAAAAIQAAJDAAAAAAQQAABAQiAJAkA=</HashCode>
+      <FileName>BasicFramework\SoftBuffer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.BasicFramework.SoftNumericalOrder" Collapsed="true">
+    <Position X="0.5" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAACAAAAQAgAEAAAAAgQAAAAAAEAAAEEA=</HashCode>
+      <FileName>BasicFramework\SoftNumerical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.BasicFramework.SoftIncrementCount" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAEAGAAAAAkABAAAAABgAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>BasicFramework\SoftNumerical.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.BasicFramework.SoftZipped" Collapsed="true">
+    <Position X="46.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicFramework\SoftZipped.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Address.DeviceAddressBase" Collapsed="true">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAEAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Address\DeviceAddressBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Address.DeviceAddressDataBase" Collapsed="true">
+    <Position X="17.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAABAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Address\DeviceAddressDataBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Address.McAddressData" Collapsed="true">
+    <Position X="16.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAACIAAAAAgAAACAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Core\Address\McAddressData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Address.ModbusAddress" Collapsed="true">
+    <Position X="13.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhAAAAAAAAAAAEEAAAACIAAABIAAAAEAEAAAgAAAA=</HashCode>
+      <FileName>Core\Address\ModbusAddress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Address.S7AddressData" Collapsed="true">
+    <Position X="18.75" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Core\Address\S7AddressData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.IMessage.AlienMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAQAAAAAAAAAAAEAAABBAIAQAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IMessage\AlienMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.IMessage.AllenBradleyMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAQAAAAAAAAAAAEAAABBAIAQAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IMessage\AllenBradleyMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.IMessage.FetchWriteMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAQAAAAAAAAAAAEAAABBAIAQAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IMessage\FetchWriteMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.IMessage.FinsMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="44.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAQAAAAAAAAAAAEAAABBAIAQAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IMessage\FinsMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.IMessage.MelsecA1EBinaryMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="44.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAQAAAAAAAAAAAEAAABBAIAQAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IMessage\MelsecA1EBinaryMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.IMessage.MelsecQnA3EAsciiMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAQAAAAAAAAAAAEAAABBAIAQAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IMessage\MelsecQnA3EAsciiMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.IMessage.MelsecQnA3EBinaryMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAQAAAAAAAAAAAEAAABBAIAQAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IMessage\MelsecQnA3EBinaryMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.IMessage.ModbusTcpMessage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAQAAAAAAAAAAAEAAABBAIAQAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IMessage\ModbusTcpMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.IMessage.S7Message" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAQAAAAAAAAAAAEAAABBAIAQAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IMessage\S7Message.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetSupport" Collapsed="true">
+    <Position X="43" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAABAAADAAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>Core\Net\NetSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetworkUdpDeviceBase&lt;TTransform&gt;" Collapsed="true">
+    <Position X="4.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAQCAAAAACAEAAAAgAAgQAACAQAAAEARggEIQAA=</HashCode>
+      <FileName>Core\Net\NetworkUdpDeviceBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.QuectelProtocol" Collapsed="true">
+    <Position X="37.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQAIAqAECAACpAAQgAgMAAAEEAxIAAABABAAQBABA=</HashCode>
+      <FileName>Core\Net\QuectelProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetworkBase.NetworkAlienClient" Collapsed="true">
+    <Position X="8.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACoIAAAAAMAAAAAEAAgAAUAQAAEcAAAAAAAAgkABAAA=</HashCode>
+      <FileName>Core\Net\NetworkBase\NetworkAlienClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetworkBase.NetworkAuthenticationServerBase" Collapsed="true">
+    <Position X="13.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAACAAIAAAAAAAAAAAAIAAAAAAAAACEwABAAA=</HashCode>
+      <FileName>Core\Net\NetworkBase\NetworkAuthenticationServerBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetworkBase.NetworkBase" Collapsed="true">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IJBECCECAigAYAAEAEAAAAiBQAoAAACQQFAAIEAhAAE=</HashCode>
+      <FileName>Core\Net\NetworkBase\NetworkBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetworkBase.NetworkDataServerBase" Collapsed="true">
+    <Position X="13.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEEARCACAAASAEgAQIkAQgQAEiAVIYBESTggUIQAA=</HashCode>
+      <FileName>Core\Net\NetworkBase\NetworkDataServerBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetworkBase.NetworkDeviceBase&lt;TNetMessage, TTransform&gt;" Collapsed="true">
+    <Position X="25.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQgAAQCAAQAASAEAAAAgAAgUQgCIQAEUEARggEAQAI=</HashCode>
+      <FileName>Core\Net\NetworkBase\NetworkDeviceBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetworkBase.NetworkDoubleBase&lt;TNetMessage, TTransform&gt;" Collapsed="true">
+    <Position X="25.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAggAABCCBEIAkAADgIAAEKAAgAAgEgCAAghFNAAA=</HashCode>
+      <FileName>Core\Net\NetworkBase\NetworkDoubleBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetworkBase.NetworkFileServerBase" Collapsed="true">
+    <Position X="6.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADAAAEAAAAUAAgmAAAAAAAgCAAAAAQ0AgAAIgAAAAA=</HashCode>
+      <FileName>Core\Net\NetworkBase\NetworkFileServerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetworkBase.NetworkServerBase" Collapsed="true">
+    <Position X="11" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAFAAAAAAAIAAAgAAAAAACCABAAAAEAAAAAAAQAAA=</HashCode>
+      <FileName>Core\Net\NetworkBase\NetworkServerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetworkBase.NetworkUdpBase" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACgAAABCAAAAAAABCAAAAAAAAA=</HashCode>
+      <FileName>Core\Net\NetworkBase\NetworkUdpBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetworkBase.NetworkUdpDeviceBase&lt;TTransform&gt;" Collapsed="true">
+    <Position X="2" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAQCAAAAACAEAAAAgAAgQAACAQAAAEARggEIQAA=</HashCode>
+      <FileName>Core\Net\NetworkBase\NetworkUdpDeviceBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.NetworkBase.NetworkXBase" Collapsed="true">
+    <Position X="11" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IDAACAAAABMAAAgEBAAAAgAAAAAAAAAAMIgAAAAAQQA=</HashCode>
+      <FileName>Core\Net\NetworkBase\NetworkXBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.StateOne.AlienSession" Collapsed="true">
+    <Position X="39.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAEAAAAA=</HashCode>
+      <FileName>Core\Net\StateOne\AlienSession.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.StateOne.AppSession" Collapsed="true">
+    <Position X="44.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAgABAgAQAEQACCAACACAAFAAAAQAAAAABgAAA=</HashCode>
+      <FileName>Core\Net\StateOne\AppSession.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.StateOne.AsyncStateSend" Collapsed="true">
+    <Position X="48.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAgAQQAgAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Net\StateOne\AsyncStateSend.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.StateOne.FileStateObject" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Net\StateOne\FileStateObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.StateOne.StateObject" Collapsed="true">
+    <Position X="2.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAAAAAAABAQAA=</HashCode>
+      <FileName>Core\Net\StateOne\StateObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.StateOne.StateObjectAsync&lt;T&gt;" Collapsed="true">
+    <Position X="2.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Core\Net\StateOne\StateObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Net.StateOne.StateOneBase" Collapsed="true">
+    <Position X="1.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAEAAAAAAAAAAAACAAAAAAABAACAAAAAAAAAQAA=</HashCode>
+      <FileName>Core\Net\StateOne\StateOneBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.QuectelThread.AsyncCoordinator" Collapsed="true">
+    <Position X="46.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAEhAAAgAAAAAAAAEgAAACQAAAAAAAgQ=</HashCode>
+      <FileName>Core\QuectelThread\ThreadLock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.QuectelThread.HslAsyncCoordinator" Collapsed="true">
+    <Position X="36" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAgAAAQAAACAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Core\QuectelThread\ThreadLock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.QuectelThread.HslReadWriteLock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgEADIAgACACEAhkAASABAABCGEEAAQABAAAFgACIIE=</HashCode>
+      <FileName>Core\QuectelThread\ThreadLock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.QuectelThread.SimpleHybirdLock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="46.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAAAAAAAAIAAAAEAEEAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Core\QuectelThread\ThreadLock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.QuectelThread.SoftMultiTask&lt;T&gt;" Collapsed="true">
+    <Position X="44.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAhABCAQBADAAEABgAAAAAIAAAAAAgQKCQAAEEgA=</HashCode>
+      <FileName>Core\QuectelThread\ThreadLock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.QuectelThread.Singleton" Collapsed="true">
+    <Position X="48.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAEAAAAQAAAAA=</HashCode>
+      <FileName>Core\QuectelThread\ThreadLock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.QuectelThread.AdvancedHybirdLock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAAAAAAAAIAAAAAAEUAAAAAAAAAggAIAA=</HashCode>
+      <FileName>Core\QuectelThread\ThreadLock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Security.QuectelSecurity" Collapsed="true">
+    <Position X="39.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Core\Security\QuectelSecurity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Transfer.ByteTransformBase" Collapsed="true">
+    <Position X="11" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAABCAAQAKgAAAAAACAAACAAAAIAAAAAAgEEQAA=</HashCode>
+      <FileName>Core\Transfer\ByteTransformBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Transfer.ByteTransformHelper" Collapsed="true">
+    <Position X="36" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAA=</HashCode>
+      <FileName>Core\Transfer\ByteTransformHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Transfer.RegularByteTransform" Collapsed="true">
+    <Position X="13.25" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Transfer\RegularByteTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Transfer.ReverseBytesTransform" Collapsed="true">
+    <Position X="8.75" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAKgAAAAAACAAACAAAAAAAAAAAAEEQAA=</HashCode>
+      <FileName>Core\Transfer\ReverseBytesTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Transfer.ReverseWordTransform" Collapsed="true">
+    <Position X="11" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAACAAAAIAAAAAAAAAAABAAAAAAAAAAgAAEAAA=</HashCode>
+      <FileName>Core\Transfer\ReverseWordTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Types.OperateResult" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAIAAAAAQAAAAAAAAAgAAAEAAQAAIAAAAAA=</HashCode>
+      <FileName>Core\Types\OperateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Types.OperateResult&lt;T&gt;" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Types\OperateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Types.OperateResult&lt;T1, T2&gt;" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Types\OperateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Types.OperateResult&lt;T1, T2, T3&gt;" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Types\OperateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Types.OperateResult&lt;T1, T2, T3, T4&gt;" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIEAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Types\OperateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Types.OperateResult&lt;T1, T2, T3, T4, T5&gt;" Collapsed="true">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIEAAAAAAAAgQAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Types\OperateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Types.OperateResult&lt;T1, T2, T3, T4, T5, T6&gt;" Collapsed="true">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIEAgAAAAAAgQAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Types\OperateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Types.OperateResult&lt;T1, T2, T3, T4, T5, T6, T7&gt;" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIEAgAAAAEAgQAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Types\OperateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Types.OperateResult&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;" Collapsed="true">
+    <Position X="19.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIEAgAAAAEAgQCAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Types\OperateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Types.OperateResult&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9&gt;" Collapsed="true">
+    <Position X="21.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIEAgAAAAEAgQCAAAAAQAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Core\Types\OperateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Types.OperateResult&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10&gt;" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIEAgAAAAEAgQCAAAAAQAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Core\Types\OperateResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Core.Types.QuectelTimeOut" Collapsed="true">
+    <Position X="41.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAABAAAAAQAAAAAAAAAAIAAAAAAAAAAAAAAAKAA=</HashCode>
+      <FileName>Core\Types\QuectelTimeOut.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Enthernet.FileNet.FileBaseInfo" Collapsed="true">
+    <Position X="41.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggAAAAAAAAAwAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enthernet\FileNet\FileBaseInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Enthernet.FileNet.FileMarkId" Collapsed="true">
+    <Position X="43" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEABAAIAAAAAAAQABAAAABAAAAAAAAgAAAAABAAAA=</HashCode>
+      <FileName>Enthernet\FileNet\FileMarkId.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Language.DefaultLanguage" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GJ+rkOz/0m00naQ+/uHLHY1JQipTaR1WuNyfYwLzgYc=</HashCode>
+      <FileName>Language\DefaultLanguage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Language.English" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GJ+rkOz/0m00naQ+/uHLHY1JQipTaR1WuNyfYwLzgYc=</HashCode>
+      <FileName>Language\English.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.LogNet.Core.LogNetBase" Collapsed="true">
+    <Position X="3" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBEgQAwADAQAgEQQACCAYEEgBCAEAAGGAAQEgBRAAg=</HashCode>
+      <FileName>LogNet\Core\LogNetBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.LogNet.Core.HslEventArgs" Collapsed="true">
+    <Position X="37.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogNet\Core\Types.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.LogNet.Core.LogNetException" Collapsed="true">
+    <Position X="41.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogNet\Core\Types.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.LogNet.Core.QuectelMessageItem" Collapsed="true">
+    <Position X="36" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAgAAAEAAAAAAARAACAAAAAAAAACABAAQA=</HashCode>
+      <FileName>LogNet\Core\Types.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.LogNet.LogNetManagment" Collapsed="true">
+    <Position X="43" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIEAAAAQAAAAAAAAADAAAAgAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>LogNet\LogNetManagment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.LogNet.Logs.LogNetDateTime" Collapsed="true">
+    <Position X="0.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEEAAAASAAAAAAAAAAAABAAAAAAACA=</HashCode>
+      <FileName>LogNet\Logs\LogNetDateTime.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.LogNet.Logs.LogNetFileSize" Collapsed="true">
+    <Position X="3" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAFEAAAAQAAQAAAAAAAAABABAAQAACA=</HashCode>
+      <FileName>LogNet\Logs\LogNetFileSize.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.LogNet.Logs.LogNetSingle" Collapsed="true">
+    <Position X="5.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABABEEAAAAQAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>LogNet\Logs\LogNetSingle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.ModBus.ModbusAscii.ModbusAscii" Collapsed="true">
+    <Position X="12.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModBus\ModbusAscii\ModbusAscii.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.ModBus.ModbusInfo" Collapsed="true">
+    <Position X="41.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABABEAIAABEAAAAAAAgBgABAAAIAACEAQAACIAAIA=</HashCode>
+      <FileName>ModBus\ModbusInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.ModBus.ModBusMonitorAddress" Collapsed="true">
+    <Position X="43" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAgAAAAAAAACAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>ModBus\ModBusMonitorAddress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.ModBus.ModBusState" Collapsed="true">
+    <Position X="46.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAgAAAQAAAACAAACBAQABAAAAAABAAgBAEAA=</HashCode>
+      <FileName>ModBus\ModBusState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.ModBus.ModbusTcp.ModbusTcpNet" Collapsed="true">
+    <Position X="31.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABgBAAAAATAEAEEBQAACAgAAABAQIEAAAAgCEAAAA=</HashCode>
+      <FileName>ModBus\ModbusTcp\ModbusTcpNet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.ModBus.ModbusTcp.ModbusTcpServer" Collapsed="true">
+    <Position X="13.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAjEFABCSARABBEEAAAAAggwBAAAAaQChKAgCECFgA=</HashCode>
+      <FileName>ModBus\ModbusTcp\ModbusTcpServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.ModBus.QuectelModbusRtu.ModbusRtu" Collapsed="true">
+    <Position X="12.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABgBAAAAATAAAEEBQAACAgIAABAQIEAAAAgCEAAAA=</HashCode>
+      <FileName>ModBus\QuectelModbusRtu\ModbusRtu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.AllenBradley.AllenBradleyHelper" Collapsed="true">
+    <Position X="41.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAAIAgABIAAgABBgAAAAAEIASAAMAAAgACAIIQAw=</HashCode>
+      <FileName>Profinet\AllenBradley\AllenBradleyHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.AllenBradley.AllenBradleyNet" Collapsed="true">
+    <Position X="17.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAQCAACAAEAEQBADgIBgAAACAEAhAEgRgAEAIgA=</HashCode>
+      <FileName>Profinet\AllenBradley\AllenBradleyNet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Melsec.MelsecA1EDataType" Collapsed="true">
+    <Position X="46.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAQAAAAACAAAAAAAAAAAgAAAAABAKAYQA=</HashCode>
+      <FileName>Profinet\Melsec\MelsecA1EDataType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Melsec.MelsecA1ENet" Collapsed="true">
+    <Position X="22.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAABAAEAAAAAABgAAAAAAAAAAgAAAEAAAA=</HashCode>
+      <FileName>Profinet\Melsec\MelsecA1ENet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Melsec.MelsecA3CNet1" Collapsed="true">
+    <Position X="1" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAQAAAAQAAAEEAAACACgAAAAAAAAAAAAAAEAACA=</HashCode>
+      <FileName>Profinet\Melsec\MelsecA3CNet1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Melsec.MelsecFxLinks" Collapsed="true">
+    <Position X="5.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAQAKABQECAAUAAAKAAgAAAAAEAgAAgAAAEAAAA=</HashCode>
+      <FileName>Profinet\Melsec\MelsecFxLinks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Melsec.MelsecFxSerial" Collapsed="true">
+    <Position X="7.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAYwAAAAAAAEABAECAAgACAABBAAAAgAAAEAIAA=</HashCode>
+      <FileName>Profinet\Melsec\MelsecFxSerial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Melsec.MelsecHelper" Collapsed="true">
+    <Position X="48.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAiAEgAAEAAAAAAAAAAAAAAAAAAAAAgAgEgAA=</HashCode>
+      <FileName>Profinet\Melsec\MelsecHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Melsec.MelsecMcAsciiNet" Collapsed="true">
+    <Position X="26.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAQAgAAAAgAEAAAAiECgAAAAAAAAAAgAAAECAAA=</HashCode>
+      <FileName>Profinet\Melsec\MelsecMcAsciiNet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Melsec.MelsecMcDataType" Collapsed="true">
+    <Position X="36" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgAAAIACAAIIUAIxAACAAABAIKECJQ4AAAAAFAeYcYU=</HashCode>
+      <FileName>Profinet\Melsec\MelsecMcDataType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Melsec.MelsecMcNet" Collapsed="true">
+    <Position X="33.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAQAgAAAAgAEAAAAiECgAAAAAAABAAwAAAECAAA=</HashCode>
+      <FileName>Profinet\Melsec\MelsecMcNet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Melsec.MelsecMcServer" Collapsed="true">
+    <Position X="15.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAAAACEQAAMAAAhQAAAAAYQABAAAAEIICA=</HashCode>
+      <FileName>Profinet\Melsec\MelsecMcServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Omron.OmronCipNet" Collapsed="true">
+    <Position X="17.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Profinet\Omron\OmronCipNet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Omron.OmronFinsDataType" Collapsed="true">
+    <Position X="44.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAgBAgAAAAAFAAAAAEA=</HashCode>
+      <FileName>Profinet\Omron\OmronFinsDataType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Omron.OmronFinsNet" Collapsed="true">
+    <Position X="20" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABEgAQIAAAAAEAEAQCAAABgAAEAIAIEAAgAQAFAACA=</HashCode>
+      <FileName>Profinet\Omron\OmronFinsNet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Omron.OmronFinsNetHelper" Collapsed="true">
+    <Position X="46.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAIAAAAAAAAAAAAAHAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Profinet\Omron\OmronFinsNetHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Omron.OmronFinsUdp" Collapsed="true">
+    <Position X="2" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABAAAQIAAAAAEAEAQCAAABgAAEAIAAAAAgAAAFAACA=</HashCode>
+      <FileName>Profinet\Omron\OmronFinsUdp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Omron.OmronHostLink" Collapsed="true">
+    <Position X="3.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAQIAAAAAEAEBAAAAAAgCAAAAAAAAAAAAAFEACA=</HashCode>
+      <FileName>Profinet\Omron\OmronHostLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Siemens.SiemensFetchWriteNet" Collapsed="true">
+    <Position X="24.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAABgBAAAAEAAAAgAACEAAAA=</HashCode>
+      <FileName>Profinet\Siemens\SiemensFetchWriteNet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Siemens.SiemensPPI" Collapsed="true">
+    <Position X="10" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACQQAAAEEAAQAABgBAAAAEAgIAgAAAEAAAA=</HashCode>
+      <FileName>Profinet\Siemens\SiemensPPI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Siemens.SiemensS7Net" Collapsed="true">
+    <Position X="29" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAABgIQQABBAIDAEAQAAIIAgEAACUUAnoIwCAAWEAgA=</HashCode>
+      <FileName>Profinet\Siemens\SiemensS7Net.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Profinet.Siemens.SiemensS7Server" Collapsed="true">
+    <Position X="11" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEQAACAAAAAEAAAAAAAhQBAAIEIQABAAAgFIAAA=</HashCode>
+      <FileName>Profinet\Siemens\SiemensS7Server.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Serial.FP1_C72" Collapsed="true">
+    <Position X="48.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAEAAgIkAAAKAABAEQIAQAEAAKBAAAAABQoA=</HashCode>
+      <FileName>Serial\FP1_C72.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Serial.SerialBase" Collapsed="true">
+    <Position X="6.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>LIAECCQAAqAAIAAEAAAkAAABIAAQAABwAAAABgCEAAA=</HashCode>
+      <FileName>Serial\SerialBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Serial.SerialDeviceBase&lt;TTransform&gt;" Collapsed="true">
+    <Position X="6.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAQCAAAAACAkAAAAoAAgQAACAQAAAEARggEIQAA=</HashCode>
+      <FileName>Serial\SerialDeviceBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Serial.SoftCRC16" Collapsed="true">
+    <Position X="39.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serial\SoftCRC16.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.Serial.SoftLRC" Collapsed="true">
+    <Position X="43" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serial\SoftLRC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quectel.Agv.Communication.StringResources" Collapsed="true">
+    <Position X="48.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAADAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StringResources.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Quectel.Agv.Communication.ModBus.MonitorAddress" Collapsed="true">
+    <Position X="36" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACACAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>ModBus\MonitorAddress.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Quectel.Agv.Communication.BasicFramework.ISoftFileSaveBase" Collapsed="true">
+    <Position X="44.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAgAAAgQAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicFramework\SoftBaseClass.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Quectel.Agv.Communication.Core.IMessage.INetMessage" Collapsed="true">
+    <Position X="41.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAQAAAAAAAAAAAEAAABBAIAQAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IMessage\INetMessage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Quectel.Agv.Communication.Core.Net.IReadWriteNet" Collapsed="true">
+    <Position X="43" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQCAAAAAAAAAAAAgAAgQAACAQAAAEARggEAAAA=</HashCode>
+      <FileName>Core\Net\IReadWriteNet.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Quectel.Agv.Communication.Core.Transfer.IByteTransform" Collapsed="true">
+    <Position X="36" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAACAAAAKgAAAAAACAAACAAAAIAAAAAAgEEQAA=</HashCode>
+      <FileName>Core\Transfer\IByteTransform.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Quectel.Agv.Communication.Core.Types.IDataTransfer" Collapsed="true">
+    <Position X="37.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Core\Types\IDataTransfer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Quectel.Agv.Communication.LogNet.Core.ILogNet" Collapsed="true">
+    <Position X="39.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgQAQAAAAAgAAQAACQIAEgAAAAAACCAAQAAABAAg=</HashCode>
+      <FileName>LogNet\Core\ILogNet.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Quectel.Agv.Communication.AnalyseProtocol.FinsTCP.EnumFinsTCPPLCProtocolType" Collapsed="true">
+    <Position X="39.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\FinsTCP\EnumFinsTCPPLCProtocolType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Quectel.Agv.Communication.AnalyseProtocol.Modbus.EnumModbusPLCProtocolType" Collapsed="true">
+    <Position X="41.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\Modbus\EnumModbusPLCProtocolType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Quectel.Agv.Communication.AnalyseProtocol.Modbus.EnumModbusType" Collapsed="true">
+    <Position X="43" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABCAAAQAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\Modbus\EnumModbusType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Quectel.Agv.Communication.AnalyseProtocol.Ona3E.EnumOna3EPLCProtocolType" Collapsed="true">
+    <Position X="44.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\Ona3E\EnumOna3EPLCProtocolType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Quectel.Agv.Communication.AnalyseProtocol.Ona3E.EnumOna3EType" Collapsed="true">
+    <Position X="46.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIAAAA=</HashCode>
+      <FileName>AnalyseProtocol\Ona3E\EnumOna3EType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Quectel.Agv.Communication.AnalyseProtocol.S7.EnumS7PLCProtocolType" Collapsed="true">
+    <Position X="48.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnalyseProtocol\S7\EnumS7PLCProtocolType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Quectel.Agv.Communication.Core.QuectelThread.CoordinationStatus" Collapsed="true">
+    <Position X="36" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAQAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\QuectelThread\ThreadLock.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Quectel.Agv.Communication.Core.Transfer.DataFormat" Collapsed="true">
+    <Position X="37.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAIAAAAAAAAABAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Transfer\DataFormat.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Quectel.Agv.Communication.LogNet.Core.GenerateMode" Collapsed="true">
+    <Position X="36" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAABAAAACAEAAAAAAAAAAAAAAAAABAAAAAABAAAAAA=</HashCode>
+      <FileName>LogNet\Core\Types.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Quectel.Agv.Communication.LogNet.Core.QuectelMessageDegree" Collapsed="true">
+    <Position X="37.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABgAAAAAAAAAAAAAAAAQAAAAAAAAQABAEAAAA=</HashCode>
+      <FileName>LogNet\Core\Types.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Quectel.Agv.Communication.Profinet.Siemens.SiemensPLCS" Collapsed="true">
+    <Position X="39.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABgAAAAAAgAAAAAAAAAABAAAAAAAIAAAAA=</HashCode>
+      <FileName>Profinet\Siemens\SiemensPLCS.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

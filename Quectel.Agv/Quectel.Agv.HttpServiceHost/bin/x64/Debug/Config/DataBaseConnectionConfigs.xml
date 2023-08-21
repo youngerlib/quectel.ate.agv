@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- type  -->
+<!--  -->
+<ConnectionConfigs>
+  <ConnectionConfig id ="0" name ="sqliteTest" type = "Sqlite" connectionString = "DataSource=.\database\SampleDB.db" filePath = ".\database\" isAutoCloseConnection = "True" isEnabled = "True"/>
+</ConnectionConfigs>

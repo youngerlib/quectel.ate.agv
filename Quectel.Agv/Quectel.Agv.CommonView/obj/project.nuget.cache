@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "+SvlcEC8FL2V2AdRxLFY8qO+4PzeKmU675dTC19ADJKycnWEgVcjXWtGiqQmM/mPVALqIwuzqeN//WOi8Jv1eg==",
+  "success": true,
+  "projectFilePath": "D:\\code\\标准框架\\Quectel.Agv\\Quectel.Agv.CommonView\\Quectel.Agv.CommonView.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\quectel\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\quectel\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\quectel\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\quectel\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\quectel\\.nuget\\packages\\prism.wpf\\8.0.0.1909\\prism.wpf.8.0.0.1909.nupkg.sha512"
+  ],
+  "logs": []
+}
